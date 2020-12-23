@@ -1,0 +1,322 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+<!-- Basic Page Needs
+	================================================== -->
+	<title>MakeMyDocument</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<!-- CSS
+	================================================== -->
+    <link rel="stylesheet" href="/css/custom.css">
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/css/bootstrap-datepicker.min.css">
+	<link rel="stylesheet" href="/css/colors/blue.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="shortcut icon" type="image/jpg" href="/images/favicon.png"/>
+	
+
+
+
+</head>
+<body id="homepage">
+
+	<!-- Wrapper -->
+	<div id="wrapper">
+
+<!-- Header Container
+	================================================== -->
+	<header id="header-container" class="fullwidth">
+
+        <!-- Header -->
+        <div id="header">
+            <div class="container">
+    
+                <!-- Left Side Content -->
+                <div class="left-side">
+    
+                    <!-- Logo -->
+                    <div id="logo">
+                        <a href="/"><img src="/images/logo-2.png" data-sticky-logo="/images/logo.png" data-transparent-logo="/images/logo-2.png" alt=""></a>
+                    </div>
+    
+                    <!-- Main Navigation -->
+                    <nav id="navigation">
+                        <ul id="responsive">
+    
+                            <li><a href="/" class="current">Home</a>
+                            </li>
+    
+                            <li><a>Services</a>
+                                <ul class="dropdown-nav">
+                                    <li><a href="/services/caste-certificate.php">Caste Certificate</a>
+                                    </li>
+                                    <li><a href="/services/domicile.php">Domicile Certificate</a>
+                                    </li>
+                                    <li><a href="/services/caste-certificate-ncl.php">Caste Certificate NCL</a></li>
+                                    <li><a href="/income-certificate.php">Income Certificate</a></li>
+                                </ul>
+                            </li>
+    
+                            <li><a href="/about-us.php">About Us</a>
+                            </li>
+    
+                            <li><a href="/contact-us.php">Contact Us</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="clearfix"></div>
+                    <!-- Main Navigation / End -->
+    
+                </div>
+                <!-- Left Side Content / End -->
+    
+            </div>
+        </div>
+        <!-- Header / End -->
+    
+    </header>
+    <div class="clearfix"></div>
+	<!-- Header Container / End -->
+	
+	<?php 
+	
+	include('snippets/mobile-header.php')
+	?>
+
+
+<!-- Intro Banner
+	================================================== -->
+	<!-- Banner section start -->
+	<div class="intro-banner-custom padding-top-20">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 banner-content">
+					
+					<h1 class="intro-banner-header-index">We prepare your legal government documents</h1>
+
+					<h3 class="intro-banner-sub-header-index">Saving your <strong>Time, Money, Exertion and Stress</strong> on every document!</h3>
+					
+					<h3 class="intro-banner-starting-price">Starting <span class="intro-banner-price">@ Rs. 499/-</span>* Only!</h3>
+
+					<p><span class="banner-section-intro">#AatmanirbharBharat #VocalForLocal <img src="images/flags/in.svg" style="width: 32px; vertical-align: baseline;"></span>
+					</p>
+
+					<h3 class="intro-banner-services"><strong>Caste, Domicile and Income Certificate</strong></h3>
+
+					<div>
+						<p class="banner-section-conditions margin-top-30">*Actual price will depend on the service selected
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="banner-form-container" id="contact-form">
+			<div class="row">
+				<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+					<div class="dashboard-box margin-top-0 border-highlight-blue">
+
+						<!-- Headline -->
+						<div class="headline header padding-bottom-0">
+							<h3 class="text-center"> Apply for Service</h3>
+							<p class="callback-form-content">Fill the details & we will get in touch with you to understand your requirement
+							</p>
+						</div>
+
+						<div class="row callback-banner-row">
+							<div class="col-lg-8 col-md-8">
+								<div class="content with-padding padding-bottom-10 callback-form-padding">
+									<div class="contact-form-wrap">
+
+										<form id="contactForm" method="post">
+											<div class="row">
+												<div class="col-lg-6 col-md-6">
+													<div class="input-with-icon-left contact-form-group">
+														<input class="with-border form-control margin-bottom-16" name="contact_name" type="text" id="contactName" placeholder="Your Name" required> 
+														<i class="icon-material-outline-account-circle"></i>
+														<div class="form-validate-icons">
+															<span></span>
+														</div>
+													</div>
+												</div>
+
+
+												<div class="col-lg-6 col-md-6">
+													<div class="input-with-icon-left contact-form-group">
+														<input class="with-border form-control margin-bottom-16" name="contact_phone" type="number" min="1000000000" max="9999999999" id="contactPhone" placeholder="Phone Number" required>
+														<i class="icon-feather-phone"></i>
+														<div class="form-validate-icons">
+															<span></span>
+														</div>
+													</div>
+												</div>
+
+
+												<div class="col-lg-6 col-md-6">
+													<div class="input-with-icon-left contact-form-group">
+														<input class="with-border form-control margin-bottom-16" name="contact_email" type="email" id="contactEmail" placeholder="Email Address" required>
+														<i class="icon-material-outline-email"></i>
+														<div class="form-validate-icons">
+															<span></span>
+														</div>
+													</div>
+												</div>
+
+												<div class="col-lg-6 col-md-6">
+													<div class="input-with-icon-left contact-form-group">
+														<div id="autocomplete-container">
+															<input  class="with-border form-control margin-bottom-16" name="contact_city" id="contactCity" type="text" placeholder="Nagpur" value="Nagpur" readonly>
+														</div>
+														<i class="icon-material-outline-location-on"></i>
+														<div class="form-validate-icons">
+															<span></span>
+														</div>
+													</div>
+												</div>
+
+
+												<div class="col-lg-12">
+													<div class="input-with-icon-left contact-form-group">
+														<select class="selectpicker with-border service-selector form-control margin-bottom-16" data-size="7" title="Choose Service" name="contact_service"  id="contactService" required>
+															<option value="domicile">Caste Certificate</option>
+															<option value="domicile">Domicile Certificate</option>
+															<option value="income-certificate">Income Certificate</option>
+														</select>
+														<i class="icon-feather-list"></i>
+														<div class="form-validate-icons">
+															<span></span>
+														</div>
+													</div>
+												</div>
+
+												<div class="col-lg-6 col-md-6">
+													<div class="contact-form-group">
+														<div class="row margin-left-0">
+															<div class="captcha-box">
+																<span id="txtCaptchaSpan"></span>
+															</div>
+
+															<div class="capta-text">
+																<input type="text" class="with-border form-control padding-right-0 padding-left-10" name="contact_question" id="txtInput" placeholder="Please Enter Code *">
+															</div>
+														</div>
+														<input type="hidden" id="txtCaptcha">
+														<div class="form-validate-icons">
+															<span></span>
+														</div>
+													</div>
+												</div>
+
+												<div class="col-lg-12 text-center">
+													<button type="submit"  name="submit" id="contactBtn"  class="button ripple-effect big margin-top-10 margin-bottom-20"> Submit Details</button>
+													<div class="notification  closeable">
+														<p id="msg"></p>
+														<a class="close"></a>
+													</div>
+												</div>
+											</div>
+
+										</form>
+
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-4 col-md-4">
+								<div class="banner-callback-benefits">
+									<p class="banner-section-benefits-content"><i class="icon-line-awesome-thumbs-up margin-right-10"></i>Trusted Brand
+									</p>
+									<p class="banner-section-benefits-content"><i class="icon-feather-award margin-right-10"></i>Expert Guidance
+									</p>
+									<p class="banner-section-benefits-content"><i class="icon-line-awesome-map-marker margin-right-10"></i>Online Process
+									</p>
+									<p class="banner-section-benefits-content"><i class="icon-line-awesome-money margin-right-10"></i>No Hidden Charges
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Banner section end -->
+
+
+<!-- Content
+	================================================== -->
+
+	<!-- Services -->
+	<?php 
+
+	include('sections/services.php');
+	?>
+	<!-- Features Cities / End -->
+
+	<!-- Section 2 Intro Text -->
+	<?php 
+	include('sections/intro.php')
+	?>
+
+	<!-- how-it-works -->
+	<?php 
+
+	include('sections/how-it-works.php')
+	?>
+	<!-- how-it-works / End -->
+
+
+	<!-- Team -->
+	<?php 
+
+	include('sections/team.php')
+	?>
+	<!-- Team / End -->
+
+
+	<!-- Counters -->
+	<?php 
+
+	include('sections/counters.php')
+	?>
+	<!-- Counters / End -->
+
+
+	<!-- Recent Blog Posts -->
+	<?php 
+
+	// include('sections/blog-slider.php')
+	?>
+	<!-- Recent Blog Posts / End -->
+</div>
+
+<!-- Footer
+	================================================== -->
+	
+	<?php 
+	
+	include('components/footer.php')
+	?>
+
+	<!-- Footer / End -->
+
+	<?php 
+	
+	include('snippets/cta-sticky-footer.php')
+	?>
+
+
+</div>
+<!-- Wrapper / End -->
+
+
+<!-- Scripts
+	================================================== -->
+	<?php 
+	
+	include('components/scripts.php')
+	?>
+
+</body>
+</html>
