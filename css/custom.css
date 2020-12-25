@@ -186,7 +186,65 @@ img.slide__image__top-position {
 	color: #fff;
 }
 
+/* ////////////////////////////////////
+		Services  New
+////////////////////////////
+*/
+.services-card{
+  border-radius: 3px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.12);
+  margin: 0 20px;
+  padding: 35px;
+  flex: 1;
+  position: relative;
+}
 
+.pricing-overall{
+    border-radius: 4px;
+    font-size: 18px;
+    color: #888;
+    text-align: center;
+    line-height: 24px;
+    padding: 9px;
+    margin: 8px 0;
+}
+
+.pricing-overall strong {
+  font-size: 32px;
+  font-weight: 700;
+  color: #333;
+  margin-right: 5px;
+  line-height: 30px;
+}
+
+.services-card:hover{
+  border-top:5px solid #2a41e8 ;
+  transition:all 0.5s;
+}
+
+.services-list{
+  padding-left: 8px;
+}
+
+.services-list> ul > li > a{
+  color: #666;
+}
+
+/* ////////////////////////////////////
+	Why people Love US
+////////////////////////////
+*/
+.WPLU-card{
+  padding: 30px;
+  margin: 20px 0px;
+}
+
+.WPLU-box-icon i {
+  font-size: 72px; 
+  display: block;
+  transition: 0.35s;
+  margin-bottom: 12px;
+}
 /* ////////////////////////////////////
 		Services  
 ////////////////////////////
