@@ -2103,3 +2103,11 @@ Policy Page
 .nav-list > li > a {
   padding: 5px;
 }
+
+.lr-form{
+  padding: 20px;
+  background-color: #fff;
+   box-shadow: 0 4px 14px rgba(0,0,0,0.03);
+   border: 1px solid #e0e0e0;
+   border-radius: 4px;
+}
