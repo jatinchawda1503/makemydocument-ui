@@ -230,6 +230,12 @@ img.slide__image__top-position {
   color: #666;
 }
 
+@media screen and (max-width: 500px) {
+  .services-card {
+    margin: 15px 0 ;
+  }
+}
+
 /* ////////////////////////////////////
 	Why people Love US
 ////////////////////////////
@@ -245,6 +251,120 @@ img.slide__image__top-position {
   transition: 0.35s;
   margin-bottom: 12px;
 }
+
+/* ////////////////////////////////////
+    How it Works 
+////////////////////////////
+*/
+.step-mark{
+  
+    background-color:#2a41e8;
+    width: 50px;
+    height: 50px;
+    line-height: 32px;
+    font-size: 32px;
+    border-radius: 50%;
+    margin: 0 auto;
+    position: relative;
+    z-index: 100;
+    animation: circle-box-anim 2s infinite;
+    transition: 0.4s;
+    color: #fff;
+    font-weight: 500;
+    animation: checkAnim 2s infinite;
+    box-shadow: 0 0 0 5px rgba(102,103,107,0.1);
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.step-mark span{
+  font-size: inherit;
+}
+
+.step-img {
+  margin-bottom: 40px;
+}
+
+.step-img > img{
+  width: 150px;
+}
+
+.process-box h2, .process-box p{
+margin: 10px 0 auto;
+}
+
+.process-box.arrow::before{
+    content: url("/images/svg/right-arrow.svg"); 
+    height: 1px;
+    width: 50px;
+    position: absolute;
+    right: 0%;
+    top: 120px;
+    background:transparent;
+    display: block;
+    z-index: 9;
+}
+
+.arrow::before{
+  transform: translate(-50%,-50%);
+    display: block;
+    margin: -10px;
+    animation: animate 2s infinite;
+}
+
+@keyframes animate {
+  0%{
+      opacity: 0;
+      transform: rotate(0deg) translate(-20px,20px);
+  }
+  50%{
+      opacity: 1;
+  }
+  100%{
+      opacity: 0;
+      transform: rotate(0deg) translate(20px,20px);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .process-box {
+    margin-bottom: 70px;
+  }
+
+  .process-box.arrow::before{
+    content: url("/images/svg/right-arrow.svg"); 
+    height: 1px;
+    width: 30px;
+    position: absolute;
+    right: 130px;
+    top: 90%;
+    background:transparent;
+    display: block;
+    z-index: 9;
+    transform: rotate(45deg);
+    display: block;
+    margin: -10px;
+    animation: animate 2s infinite;
+    }
+    @keyframes animate {
+      0%{
+          opacity: 0;
+          transform: rotate(90deg) translate(-10px,10px);
+      }
+      50%{
+          opacity: 1;
+      }
+      100%{
+          opacity: 0;
+          transform: rotate(90deg) translate(10px,10px);
+      }
+    }
+
+}
+
+
 /* ////////////////////////////////////
 		Services  
 ////////////////////////////
@@ -1164,7 +1284,7 @@ select#slct {
 .bottom-navigation .bottom-navigation-menu h3{ margin: 5px 0 0;}
 .bottom-navigation .bottom-navigation-menu .thumbail{margin-right:10px; text-align:center;}
 .bottom-navigation .bottom-navigation-menu .thumbail i{font-size:35px;}
-.bottom-navigation .bottom-navigation-menu .thumbail h3{color:#333 !important; margin: 0 !important; font-size:18px !important;}
+.bottom-navigation .bottom-navigation-menu .thumbail h3{color:#333 !important; margin: 0 !important; font-size:15px !important;}
 @media (max-width: 480px){ .bottom-navigation{display:block; z-index:1;}#toTop {display:none !important;}}
 .smart-scroll{position: fixed;bottom: 0;right: 0;left: 0;background:rgba(248, 247, 247, 0.99); transform:translateY(0); visibility: visible;    padding: 20px 0 15px 0;border-top: 1px solid #e4e4e4;box-shadow:0 -7px 30px -7px rgba(0,0,0,.6);z-index: 100; opacity: 1;transition:  all 0.8s ease-in-out;}
 .scrolled-down{transform:translateY(100%); transition: all 0.6s ease-in-out;box-shadow:none;}
@@ -1172,8 +1292,51 @@ select#slct {
 .bottom-navigation .bottom-navigation-menu .thumbail .detail{position:relative;}
 .bottom-navigation .bottom-navigation-menu .thumbail .detail .active{float: none; display: inline-block !important; width: 18px; height: 18px; line-height: 18px; border-radius: 100%; text-align: center; position: absolute; top: -8px;  right: -10px; color: #fff; background: #f35151; }
 
+/* 
+
+//Changed CSS FOr Home */
+
+.mobile-fixed-menu{position: relative;}
+.bottom-navigation-footer{display:none; opacity: 0;}
 
 
+
+@media (max-width: 480px){
+.bottom-navigation-footer{
+  display: block;
+  opacity: 1;
+  padding: 8px 0 0px;
+}
+.footer-menu {
+  width: 100%;
+}
+
+.bottom-navigation-mmenu{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.bottom-navigation-mmenu .thumbail{
+  width: 100%;
+  text-align: center;
+}
+.bottom-navigation-mmenu li a i{
+  font-size: 30px;
+  line-height: 20px;
+  display: block;
+}
+
+.bottom-navigation-mmenu li a{
+font-size: 13px;
+text-align: center;
+}
+
+
+}
 
 /* ////////////////////////////////////
 		Media Screen
@@ -1331,6 +1494,14 @@ z-index: inherit !important;
   }
 }
 
+@media screen and (max-width: 374px){
+.fullwidth .header-widget:last-of-type, .header-widget:last-of-type{
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+
+}
 /* ///////////////////
 Service callback Form
 //////////////////
