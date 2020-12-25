@@ -674,7 +674,49 @@ margin: 10px 0 auto;
   margin-right: 0px;
 }
 
+/* Service Apply */
+.boxed-widget.apply-now{
+  position: sticky;
+  top:140px;
+}
 
+
+.boxed-widget.apply-now div.total-costs {
+  font-size: 18px;
+  border-top: 1px solid #e4e4e4;
+  padding-top: 18px;
+  margin-top: 18px;
+}
+.boxed-widget.apply-now .boxed-widget-inner li{
+  color: #666;
+  padding-bottom: 10px;
+  font-size:18px;
+  font-weight: 400;
+}
+.boxed-widget.apply-now .boxed-widget-inner li span{
+  float: left;
+  font-size: 25px;
+  font-weight: 600;
+  color: #666;
+  margin: 0 10px;
+}
+@media screen and (max-width: 1024px) {
+  .boxed-widget.apply-now{
+   
+    top:35px;
+  }
+
+}
+
+
+/* Genric contact Enquiry Submission */
+.genric-enquiry-submission{
+  padding: 20px;
+   background-color: #fff;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.03);
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+}
 /* ////////////////////////////////////
 		Team
 ////////////////////////////
@@ -1424,7 +1466,10 @@ text-align: center;
 
  #header{display: none;}
 
- .left-side{padding-left: 10px;}
+ /* .left-side{padding-left: 10px;} */
+ #mobile-header .left-side span{
+   display: flex;
+ }
 
  .counter-inner>h3,span.counter {
   font-size: 30px !important;
@@ -1949,4 +1994,112 @@ Policy Page
   100% {
     transform: rotate(360deg);
   }
+}
+
+
+
+/* table of COntent */
+
+/*
+ * jquery.tocify.css 1.9.0
+ * Author: @gregfranko
+ */
+
+/* The Table of Contents container element */
+.tocify {
+  width: 290px;
+  margin-left: 2%;
+  position: sticky;
+  top:140px;
+  /* border: 1px solid #ccc; */
+  /* -webkit-border-radius: 6px;
+  -moz-border-radius: 6px; */
+  /* border-radius: 6px; */
+}
+
+  .tocify ul{
+      padding: 12px 5px;
+  }
+  .tocify-header .tocify-item{
+          background: #f7f7f7;
+          border-radius: 3px;
+          margin: 4px;
+          transition:all .5s ease-in-out;
+     
+  }
+  .tocify-header .tocify-item a{
+  font-size: 16px;
+  padding: 20px 10px;
+  display: block;
+  font-weight: bold;
+  }
+
+
+  .tocify-header .tocify-item.tocify-focus {
+      border-left: 5px solid #2a41e8;
+      box-shadow: 0 0 7px 0px #a39393;
+      background: #fff;
+  }
+
+  @media screen and (max-width: 1024px) {
+      .tocify {
+          width: 100%;
+          top: 35px;
+      }
+
+      .tocify-header .tocify-item a {
+          font-size: 15px;
+          padding: 15px 1px;
+          display: block;
+          font-weight: bold;
+      }
+      
+
+  }
+
+
+
+/* The Table of Contents is composed of multiple nested unordered lists.  These styles remove the default styling of an unordered list because it is ugly. */
+.tocify ul, .tocify li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border: none;
+  line-height: 30px;
+}
+
+/* Top level header elements */
+.tocify-header {
+  text-indent: 10px;
+}
+
+/* Top level subheader elements.  These are the first nested items underneath a header element. */
+.tocify-subheader {
+  text-indent: 20px;
+  display: none;
+}
+
+/* Makes the font smaller for all subheader elements. */
+.tocify-subheader li {
+  font-size: 12px;
+}
+
+/* Further indents second level subheader elements. */
+.tocify-subheader .tocify-subheader {
+  text-indent: 30px;
+}
+
+/* Further indents third level subheader elements. You can continue this pattern if you have more nested elements. */
+.tocify-subheader .tocify-subheader .tocify-subheader {
+  text-indent: 40px;
+}
+
+/* Twitter Bootstrap Override Style */
+.nav-list > li > a, .nav-list .nav-header {
+  margin: 0px;
+}
+
+/* Twitter Bootstrap Override Style */
+.nav-list > li > a {
+  padding: 5px;
 }
