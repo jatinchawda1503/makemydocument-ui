@@ -190,14 +190,32 @@ img.slide__image__top-position {
 		Services  New
 ////////////////////////////
 */
+
 .services-card{
-  border-radius: 3px;
+  border-radius: 5px;
   box-shadow: 0 2px 12px rgba(0,0,0,0.12);
   margin: 0 20px;
   padding: 35px;
   flex: 1;
   position: relative;
 }
+
+.service-cat-tag{
+    font-size: 14px;
+    background: #2a41e8;
+    color: #fff;
+    border-radius: 4px;
+    line-height: 20px;
+    padding: 4px 10px;
+    flex-grow: 0;
+    flex: auto;
+    width: auto;
+    transition: 0.3s;
+    margin-top: 6px;
+    margin-right: 5px;
+    display: inline-block;
+}
+
 
 .pricing-overall{
     border-radius: 4px;
