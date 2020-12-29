@@ -470,7 +470,7 @@ $(document).ready(function(){
             $(function() {
 
               var toc = $("#toc").tocify({context: "#data-services", selectors: "h3" , showAndHide: true,theme:"none", highlightOnScroll: true,showEffect: "fadeIn", scrollTo: 100, smoothScroll: true,extendPage: false}).data("toc-tocify");
-              toc.setOptions({ });
+              
           });
   
               

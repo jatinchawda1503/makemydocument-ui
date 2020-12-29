@@ -1,4 +1,4 @@
-<!doctype html>
+<!Doctype html>
 <html lang="en">
 <head>
 
@@ -493,7 +493,7 @@
 
     <div class="container">
         <div class="row">
-            <div class="col-xl-5 offset-xl-3">
+            <div class="col-xl-8 offset-xl-3">
     
     
                 <div class="login-register-page padding-top-45">
@@ -508,130 +508,156 @@
         
                 <div class="lr-form">
 
-                    <ul class="popup-tabs-nav">
-                        <li><a href="#login">Log In</a></li>
-                        <li><a href="#register">Register</a></li>
-                    </ul>
-        
-                    <div class="popup-tabs-container">
-        
-                        <!-- Login -->
-                    <div class="popup-tab-content" id="login">
-        
-                            <!-- Welcome Text -->
-                            <div class="welcome-text">
-                                <h3>We're glad to see you again!</h3>
-                                <span>Don't have an account? <a href="#" class="register-tab">Sign Up!</a></span>
-                            </div>
-                             <!-- Account Type -->
-                             <div class="account-type">
-                                <div>
-                                    <input type="radio" name="account-type-radio" id="freelancer-radio" class="account-type-radio" checked/>
-                                    <label for="freelancer-radio" class="ripple-effect-dark"><i class="icon-material-outline-account-circle"></i> User</label>
-                                </div>
-        
-                                <div>
-                                    <input type="radio" name="account-type-radio" id="employer-radio" class="account-type-radio"/>
-                                    <label for="employer-radio" class="ripple-effect-dark"><i class="icon-material-outline-business-center"></i> Employer</label>
-                                </div>
-                            </div>
-                            <!-- Form -->
-                            <!-- Form -->
-                        <form id="user-login-form" method="post">
-                            
-                            <div id="user-sign-in">
-                                <div class="col-xl-12">
-                                    <div class="input-with-icon-left contact-form-group">
-                                        <input class="with-border form-control" name="user_phone" type="phone" id="userPhone" placeholder="Phone Number" required>
-                                        <i class="icon-feather-phone"></i>
-                                        <span id="phone_error" class="field_error"></span>
-                                    </div>
-                                </div>
+                    <!--Tabs -->
+		<div class="sign-in-form">
 
-                                
+			<ul class="popup-tabs-nav">
+				<li><a href="#login">Log In</a></li>
+				<li><a href="#register">Register</a></li>
+			</ul>
 
+			<div class="popup-tabs-container">
 
-                                <div class="col-xl-12">
-                                    <button type="button"  name="user_login" id="userLogin"  class="button full-width ripple-effect big margin-top-10 margin-bottom-20" onclick="send_otp()"> Submit Details</button>
-                                    
-                                </div>
-                            </div>
-                            
-                            
-                            <div id='verify-user-otp' class="login-setup-section" >
-                                        <div class="otp-header padding-bottom-10">
-                                    <i class="icon-material-outline-arrow-back" aria-hidden="true"></i>
-                                    <p>Login Using OTP</p>
-                                    </div>
+				<!-- Login -->
+				<div class="popup-tab-content" id="login">
 
-                                    <div class="form-group second_box">
-                                    <input type="text" id="otp" class="form-control" placeholder="OTP" required="required">
-                                    <span id="otp_error" class="field_error"></span>
-                                </div>
-                                <div class="form-group second_box">
-                                    <button type="button" id="opt-btn" class="button full-width ripple-effect big margin-top-10 margin-bottom-20" onclick="submit_otp()">Submit OTP</button>
-                                </div>       
+					<!-- Welcome Text -->
+					<div class="welcome-text">
+						<h3>We're glad to see you again!</h3>
+						<span>Don't have an account? <a href="#" class="register-tab">Sign Up!</a></span>
+					</div>
+					
+					<!-- Form -->
+					<form id="login-form" method="post">
+					
+                        <div id="sign-in">
+							<div class="col-xl-12">
+								<div class="input-with-icon-left contact-form-group">
+									<input class="with-border form-control" name="phone" type="text" id="PhoneNumber" placeholder="Phone Number" required>
+									<i class="icon-feather-phone"></i>
+									<span id="number_error" class="field_error"></span>
+								</div>
+							</div>
+
+						
+
+							<div class="col-xl-12">
+								<button type="button"  name="phone_login" id="PhoneLogin"  class="button full-width ripple-effect big margin-top-10 margin-bottom-20 request-otp" > Submit Details</button>
                             </div>
-                                    
-                        </form>
-        
-                            
-                    </div>
-        
-                        <!-- Register -->
-                    <div class="popup-tab-content" id="register">
-        
-                            <!-- Welcome Text -->
-                            <div class="welcome-text">
-                                <h3>Let's create your account!</h3>
-                            </div>
-        
-                           
-                            
-                            <!-- Form -->
-                            <form id="user-login-form" method="post">
-                            
-                                <div id="user-sign-up">
-                                    <div class="col-xl-12">
-                                        <div class="input-with-icon-left contact-form-group">
-                                            <input class="with-border form-control" name="user_phone" type="phone" id="userPhone" placeholder="Phone Number" required>
-                                            <i class="icon-feather-phone"></i>
-                                            <span id="phone_error" class="field_error"></span>
-                                        </div>
-                                    </div>
-    
-                                    
-    
-    
-                                    <div class="col-xl-12">
-                                        <button type="button"  name="user_login" id="userLogin"  class="button full-width ripple-effect big margin-top-10 margin-bottom-20" onclick="send_otp()"> Submit Details</button>
-                                        
-                                    </div>
-                                </div>
-                                
-                                
-                                <div id='verify-user-otp' class="login-setup-section" >
-                                            <div class="otp-header">
-                                        <i class="icon-material-outline-arrow-back" aria-hidden="true"></i>
-                                        <p>Login Using OTP</p>
-                                        </div>
-    
-                                        <div class="form-group second_box">
-                                        <input type="text" id="otp" class="form-control" placeholder="OTP" required="required">
-                                        <span id="otp_error" class="field_error"></span>
-                                    </div>
-                                    <div class="form-group second_box">
-                                        <button type="button" id="opt-btn" class="button full-width ripple-effect big margin-top-10 margin-bottom-20" onclick="submit_otp()">Submit OTP</button>
-                                    </div>       
-                                </div>
-                                        
-                            </form>
-        
-                            
-        
                         </div>
+                        
+                        
+                        <div id='verify-otp' class="login-setup-section" >
+                            <div class="otp-header padding-bottom-20">
+                                <i class="icon-material-outline-arrow-back" aria-hidden="true"></i>
+                                <p>Login Using OTP</p>
+                            </div>
+								<div class="form-group second_box d-flex justify-content-center align-items-center margin-bottom-20">
+									<h3><strong><span id="message" class="margin-right-10"></span></strong></h3>
+									<button class="button gray ripple-effect-dark b2lr" id="b2l">Change</button>
+								</div>
+                                <div class="form-group second_box">
+                                <input type="text" id="otp" class="form-control" placeholder="OTP" required="required">
+                                <span id="otp_error" class="field_error"></span>
+								</div>
+								
+                            <div class="form-group second_box">
+                                <button type="button" id="opt-btn" class="button full-width ripple-effect big margin-top-10 margin-bottom-20" >Submit OTP</button>
+                            </div>       
+                        </div>
+						
+						<!-- Social Login -->
+							<div class="social-login-separator"><span>or</span></div>
+							<div class="social-login-buttons">
+								<button class="facebook-login ripple-effect"><i class="icon-brand-facebook-f"></i> Log In via Facebook</button>
+								<button class="google-login ripple-effect"><i class="icon-brand-google-plus-g"></i> Log In via Google+</button>
+							</div>		
+             	   </form>
+
+					
+					
+
+				</div>
+
+				<!-- Register -->
+				<div class="popup-tab-content" id="register">
+
+					<!-- Welcome Text -->
+					<div class="welcome-text">
+						<h3>Let's create your account!</h3>
+					</div>
+
+				
+					
+					<!-- Form -->
+					<form method="post" id="register-account-form">
+						<div id="register-now">
+									
+									<div class="col-xl-12">
+										<div class="input-with-icon-left contact-form-group">
+											<i class="icon-material-outline-account-circle"></i>
+											<input type="text" class="input-text with-border" name="name" id="name-register" placeholder="Full Name" required/>
+										</div>
+									</div>
+
+									<div class="col-xl-12">
+										<div class="input-with-icon-left contact-form-group">
+											<i class="icon-material-baseline-mail-outline"></i>
+											<input type="text" class="input-text with-border" name="emailaddress-register" id="emailaddress-register" placeholder="Email Address" required/>
+										</div>
+									</div>
+
+									<div class="col-xl-12">
+										<div class="input-with-icon-left contact-form-group">
+											<input class="with-border form-control" name="phone" type="text" id="PhoneRegister" placeholder="Phone Number" required>
+											<i class="icon-feather-phone"></i>
+											<span id="number_error" class="field_error"></span>
+										</div>
+									</div>
+									
+									<button class="margin-top-10 button full-width button-sliding-icon ripple-effect" type="submit" id="register-account-btn">Register <i class="icon-material-outline-arrow-right-alt"></i></button>
+						</div>
+
+
+
+									<div id='register-otp' class="login-setup-section">
+											<div class="otp-header padding-bottom-20">
+												<i class="icon-material-outline-arrow-back" aria-hidden="true"></i>
+												<p>Login Using OTP</p>
+											</div>
+											<div class="form-group second_box d-flex justify-content-center align-items-center margin-bottom-20">
+												<h3><strong><span id="r-message" class="margin-right-10"></span></strong></h3>
+												<button class="button gray ripple-effect-dark b2lr" id="b2r">Change</button>
+											</div>
+
+											<div class="form-group second_box">
+											<input type="text" id="r-otp" class="form-control" placeholder="OTP" required="required">
+											<span id="otp_error" class="field_error"></span>
+											</div>
+										<div class="form-group second_box">
+											<button type="button" id="e-opt-btn" class="button full-width ripple-effect big margin-top-10 margin-bottom-20">Submit OTP</button>
+										</div>       
+									</div>
+
+									<!-- Social Login -->
+								<div class="social-login-separator"><span>or</span></div>
+								<div class="social-login-buttons">
+									<button class="facebook-login ripple-effect"><i class="icon-brand-facebook-f"></i> Register via Facebook</button>
+									<button class="google-login ripple-effect"><i class="icon-brand-google-plus-g"></i> Register via Google+</button>
+								</div>
+					</form>
+
+					<!-- Button -->
+					
+
+					
+
+				</div>
+
+			</div>
+		</div>
         
-                    </div>
+                    
                 </div>
                     
                 </div>
@@ -796,110 +822,7 @@
 <!-- Wrapper / End -->
 
 
-<!-- Sign In Popup
-	================================================== -->
-	<div id="sign-in-dialog" class="zoom-anim-dialog mfp-hide dialog-with-tabs">
 
-		<!--Tabs -->
-		<div class="sign-in-form">
-
-			<ul class="popup-tabs-nav">
-				<li><a href="#login">Log In</a></li>
-				<li><a href="#register">Register</a></li>
-			</ul>
-
-			<div class="popup-tabs-container">
-
-				<!-- Login -->
-				<div class="popup-tab-content" id="login">
-
-					<!-- Welcome Text -->
-					<div class="welcome-text">
-						<h3>We're glad to see you again!</h3>
-						<span>Don't have an account? <a href="#" class="register-tab">Sign Up!</a></span>
-					</div>
-					
-					<!-- Form -->
-					<form method="post" id="login-form">
-						<div class="input-with-icon-left">
-							<i class="icon-material-baseline-mail-outline"></i>
-							<input type="text" class="input-text with-border" name="emailaddress" id="emailaddress" placeholder="Email Address" required/>
-						</div>
-
-						<div class="input-with-icon-left">
-							<i class="icon-material-outline-lock"></i>
-							<input type="password" class="input-text with-border" name="password" id="password" placeholder="Password" required/>
-						</div>
-						<a href="#" class="forgot-password">Forgot Password?</a>
-					</form>
-
-					<!-- Button -->
-					<button class="button full-width button-sliding-icon ripple-effect" type="submit" form="login-form">Log In <i class="icon-material-outline-arrow-right-alt"></i></button>
-
-					<!-- Social Login -->
-					<div class="social-login-separator"><span>or</span></div>
-					<div class="social-login-buttons">
-						<button class="facebook-login ripple-effect"><i class="icon-brand-facebook-f"></i> Log In via Facebook</button>
-						<button class="google-login ripple-effect"><i class="icon-brand-google-plus-g"></i> Log In via Google+</button>
-					</div>
-
-				</div>
-
-				<!-- Register -->
-				<div class="popup-tab-content" id="register">
-
-					<!-- Welcome Text -->
-					<div class="welcome-text">
-						<h3>Let's create your account!</h3>
-					</div>
-
-					<!-- Account Type -->
-					<div class="account-type">
-						<div>
-							<input type="radio" name="account-type-radio" id="freelancer-radio" class="account-type-radio" checked/>
-							<label for="freelancer-radio" class="ripple-effect-dark"><i class="icon-material-outline-account-circle"></i> Freelancer</label>
-						</div>
-
-						<div>
-							<input type="radio" name="account-type-radio" id="employer-radio" class="account-type-radio"/>
-							<label for="employer-radio" class="ripple-effect-dark"><i class="icon-material-outline-business-center"></i> Employer</label>
-						</div>
-					</div>
-					
-					<!-- Form -->
-					<form method="post" id="register-account-form">
-						<div class="input-with-icon-left">
-							<i class="icon-material-baseline-mail-outline"></i>
-							<input type="text" class="input-text with-border" name="emailaddress-register" id="emailaddress-register" placeholder="Email Address" required/>
-						</div>
-
-						<div class="input-with-icon-left" title="Should be at least 8 characters long" data-tippy-placement="bottom">
-							<i class="icon-material-outline-lock"></i>
-							<input type="password" class="input-text with-border" name="password-register" id="password-register" placeholder="Password" required/>
-						</div>
-
-						<div class="input-with-icon-left">
-							<i class="icon-material-outline-lock"></i>
-							<input type="password" class="input-text with-border" name="password-repeat-register" id="password-repeat-register" placeholder="Repeat Password" required/>
-						</div>
-					</form>
-
-					<!-- Button -->
-					<button class="margin-top-10 button full-width button-sliding-icon ripple-effect" type="submit" form="register-account-form">Register <i class="icon-material-outline-arrow-right-alt"></i></button>
-
-					<!-- Social Login -->
-					<div class="social-login-separator"><span>or</span></div>
-					<div class="social-login-buttons">
-						<button class="facebook-login ripple-effect"><i class="icon-brand-facebook-f"></i> Register via Facebook</button>
-						<button class="google-login ripple-effect"><i class="icon-brand-google-plus-g"></i> Register via Google+</button>
-					</div>
-
-				</div>
-
-			</div>
-		</div>
-	</div>
-	<!-- Sign In Popup / End -->
 
 
 	<!-- Scripts
@@ -962,49 +885,92 @@ $('#snackbar-user-status label').click(function() {
     
     <script>
 
-function send_otp(){
-        var email=jQuery('#userEmail').val();
-        var password=jQuery('#userPassword').val();
-        $('#userLogin').html('Please wait');
-        $('#userLogin').attr('disabled',true);
-        jQuery.ajax({
-            url:'./inc/user-login-conf.php',
-            type:'post',
-            data:'email='+email+'&password='+password,
-            success:function(result){
-                if(result=='yes'){
-                    jQuery('#verify-user-otp').show();
-                    jQuery('#user-sign-in').hide();
-                    $('#userLogin').html('Submit');
-                    $('#userLogin').attr('disabled',false);
-                }
-                if(result=='not_exist'){
-                    jQuery('#email_error').html('Please enter valid email or password');
-                }
-            }
-        });
-    }
+	// function send_otp(){
+    //     var email=jQuery('#userEmail').val();
+    //     var password=jQuery('#userPassword').val();
+    //     $('#userLogin').html('Please wait');
+    //     $('#userLogin').attr('disabled',true);
+    //     jQuery.ajax({
+    //         url:'./inc/user-login-conf.php',
+    //         type:'post',
+    //         data:'email='+email+'&password='+password,
+    //         success:function(result){
+    //             if(result=='yes'){
+    //                 jQuery('#verify-user-otp').show();
+    //                 jQuery('#user-sign-in').hide();
+    //                 $('#userLogin').html('Submit');
+    //                 $('#userLogin').attr('disabled',false);
+    //             }
+    //             if(result=='not_exist'){
+    //                 jQuery('#email_error').html('Please enter valid email or password');
+    //             }
+    //         }
+    //     });
+    // }
     
-    function submit_otp(){
-        var otp=jQuery('#otp').val();
-        $('#opt-btn').html('Please wait');
-        $('#opt-btn').attr('disabled',true);
-        jQuery.ajax({
-            url:'',
-            type:'post',
-            data:'otp='+otp,
-            success:function(result){
-                if(result=='yes'){
-                    $('#opt-btn').html('Submit');
-                    $('#opt-btn').attr('disabled',false);
-                    window.location='/user/user-index.php'
-                }
-                if(result=='not_exist'){
-                    jQuery('#otp_error').html('Please enter valid otp');
-                }
-            }
-        });
-    } 
+    // function submit_otp(){
+    //     var otp=jQuery('#otp').val();
+    //     $('#opt-btn').html('Please wait');
+    //     $('#opt-btn').attr('disabled',true);
+    //     jQuery.ajax({
+    //         url:'',
+    //         type:'post',
+    //         data:'otp='+otp,
+    //         success:function(result){
+    //             if(result=='yes'){
+    //                 $('#opt-btn').html('Submit');
+    //                 $('#opt-btn').attr('disabled',false);
+    //                 window.location='/user/user-index.php'
+    //             }
+    //             if(result=='not_exist'){
+    //                 jQuery('#otp_error').html('Please enter valid otp');
+    //             }
+    //         }
+    //     });
+	// } 		
+				
+				
+				$('#verify-otp').hide();
+				$('#PhoneLogin').on('click',function(){
+				$('#sign-in').hide();
+				$('#verify-otp').show();
+				
+				});
+				$('.fa-chevron-left , #b2l').on('click',function(){
+				$('#sign-in').show();
+				$('#verify-otp').hide();
+				});
+
+				$('#register-otp').hide();
+				$('#register-account-btn').on('click',function(){
+				$('#register-now').hide();
+				$('#register-otp').show();
+				
+				});
+				$('.fa-chevron-left , #b2r').on('click',function(){
+				$('#register-now').show();
+				$('#register-otp').hide();
+				});
+
+				$('#PhoneNumber').on('keydown, keyup', function () {
+					
+					var texInputValue = $('#PhoneNumber').val();
+					
+					
+					$('#message').html(texInputValue);
+					});
+
+				$('#PhoneRegister').on('keydown, keyup', function () {
+				
+				var texInputValuer = $('#PhoneRegister').val();
+				
+				
+				$('#r-message').html(texInputValuer);
+				});
+
+					
+
+
 
 </script>
 </body>

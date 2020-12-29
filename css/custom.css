@@ -260,14 +260,23 @@ img.slide__image__top-position {
 */
 .WPLU-card{
   padding: 30px;
-  margin: 20px 0px;
+  margin: 20px 0px; 
 }
 
-.WPLU-box-icon i {
-  font-size: 72px; 
+
+.WPLU-box-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.WPLU-box-icon img {
+  width: 72px; 
   display: block;
   transition: 0.35s;
   margin-bottom: 12px;
+  
 }
 
 /* ////////////////////////////////////
@@ -2110,4 +2119,27 @@ Policy Page
    box-shadow: 0 4px 14px rgba(0,0,0,0.03);
    border: 1px solid #e0e0e0;
    border-radius: 4px;
+}
+
+#b2lr{
+  padding: 5px;
+}
+
+.lr-form .popup-tabs-nav{
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+
+}
+
+.lr-form .popup-tabs-nav li,.lr-form .popup-tabs-nav li a,.lr-form .popup-tabs-nav li:last-child a:hover{
+  border-right: none;
+  width: 100%;
+  text-align: center;
+}
+
+.lr-form .popup-tabs-nav li.active{
+  border-bottom: 2px solid #2a41e8;
+  transition: all 0.3s ease;
 }
