@@ -1101,7 +1101,7 @@
 							<li><span><i class="icon-material-outline-location-on"></i></span> Nagpur</span></li>
 						</ul>
 						<div class="total-costs margin-top-15">
-							<a href="#" class="button full-width ripple-effect button-sliding-icon" >Apply now<i class="icon-feather-arrow-right"></i></a>
+							<a href="#custom-dialog" class="button apply-now-button popup-with-zoom-anim full-width ripple-effect button-sliding-icon margin-bottom-0" >Apply now<i class="icon-feather-arrow-right"></i></a>
 						</div>
 					</div>
 				</div>
@@ -1297,110 +1297,261 @@
 <!-- Wrapper / End -->
 
 
-<!-- Sign In Popup
-	================================================== -->
-	<div id="sign-in-dialog" class="zoom-anim-dialog mfp-hide dialog-with-tabs">
 
-		<!--Tabs -->
-		<div class="sign-in-form">
 
-			<ul class="popup-tabs-nav">
-				<li><a href="#login">Log In</a></li>
-				<li><a href="#register">Register</a></li>
-			</ul>
+	<!-- Make an Offer Popup
+================================================== -->
+<div id="custom-dialog" class="zoom-anim-dialog mfp-hide dialog-with-tabs">
 
-			<div class="popup-tabs-container">
+	<!--Tabs -->
+	<div class="sign-in-form">
 
-				<!-- Login -->
-				<div class="popup-tab-content" id="login">
+		<ul class="popup-tabs-nav">
+			<li><a href="#login-register">Login / Register</a></li>
+			<li><a href="#tab">Fill the Details</a></li>
+			<li><a href="#loginn">Make Payment</a></li>
+		</ul>
 
-					<!-- Welcome Text -->
-					<div class="welcome-text">
-						<h3>We're glad to see you again!</h3>
-						<span>Don't have an account? <a href="#" class="register-tab">Sign Up!</a></span>
-					</div>
-					
-					<!-- Form -->
-					<form method="post" id="login-form">
-						<div class="input-with-icon-left">
-							<i class="icon-material-baseline-mail-outline"></i>
-							<input type="text" class="input-text with-border" name="emailaddress" id="emailaddress" placeholder="Email Address" required/>
+		<div class="popup-tabs-container">
+
+
+				<div class="popup-tab-content" id="login-register">
+
+					<div class="sign-in-form">
+
+						<ul class="popup-tabs-nav">
+							<li><a href="#login">Log In</a></li>
+							<li><a href="#register">Register</a></li>
+						</ul>
+			
+						<div class="popup-tabs-container">
+			
+							<!-- Login -->
+							<div class="popup-tab-content" id="login">
+			
+								<!-- Welcome Text -->
+								<div class="welcome-text">
+									<h3>We're glad to see you again!</h3>
+									<span>Don't have an account? <a href="#register" class="register-tab">Sign Up!</a></span>
+								</div>
+								
+								<!-- Form -->
+								<form id="login-form" method="post">
+								
+									<div id="sign-in">
+										<div class="col-xl-12">
+											<div class="input-with-icon-left contact-form-group">
+												<input class="with-border form-control" name="phone" type="text" id="PhoneNumber" placeholder="Phone Number" required>
+												<i class="icon-feather-phone"></i>
+												<span id="number_error" class="field_error"></span>
+											</div>
+										</div>
+			
+									
+			
+										<div class="col-xl-12">
+											<button type="button"  name="phone_login" id="PhoneLogin"  class="button full-width ripple-effect big margin-top-10 margin-bottom-20 request-otp" > Submit Details</button>
+										</div>
+									</div>
+									
+									
+									<div id='verify-otp' class="login-setup-section" >
+										<div class="otp-header padding-bottom-20">
+											<i class="icon-material-outline-arrow-back" aria-hidden="true"></i>
+											<p>Login Using OTP</p>
+										</div>
+											<div class="form-group second_box d-flex justify-content-center align-items-center margin-bottom-20">
+												<h3><strong><span id="message" class="margin-right-10"></span></strong></h3>
+												<button class="button gray ripple-effect-dark b2lr" id="b2l">Change</button>
+											</div>
+											<div class="form-group second_box">
+											<input type="text" id="otp" class="form-control" placeholder="OTP" required="required">
+											<span id="otp_error" class="field_error"></span>
+											</div>
+											
+										<div class="form-group second_box">
+											<button type="button" id="opt-btn" class="button full-width ripple-effect big margin-top-10 margin-bottom-20" >Submit OTP</button>
+										</div>       
+									</div>
+									
+									<!-- Social Login -->
+										<div class="social-login-separator"><span>or</span></div>
+										<div class="social-login-buttons">
+											<button class="facebook-login ripple-effect"><i class="icon-brand-facebook-f"></i> Log In via Facebook</button>
+											<button class="google-login ripple-effect"><i class="icon-brand-google-plus-g"></i> Log In via Google+</button>
+										</div>		
+								</form>
+			
+								
+								
+			
+							</div>
+			
+							<!-- Register -->
+							<div class="popup-tab-content" id="register">
+			
+								<!-- Welcome Text -->
+								<div class="welcome-text">
+									<h3>Let's create your account!</h3>
+									<span>Have an account? <a href="#login" class="login-tab">Sign In!</a></span>
+								</div>
+			
+							
+								
+								<!-- Form -->
+								<form method="post" id="register-account-form">
+									<div id="register-now">
+												
+												<div class="col-xl-12">
+													<div class="input-with-icon-left contact-form-group">
+														<i class="icon-material-outline-account-circle"></i>
+														<input type="text" class="input-text with-border" name="name" id="name-register" placeholder="Full Name" required/>
+													</div>
+												</div>
+			
+												<div class="col-xl-12">
+													<div class="input-with-icon-left contact-form-group">
+														<i class="icon-material-baseline-mail-outline"></i>
+														<input type="text" class="input-text with-border" name="emailaddress-register" id="emailaddress-register" placeholder="Email Address" required/>
+													</div>
+												</div>
+			
+												<div class="col-xl-12">
+													<div class="input-with-icon-left contact-form-group">
+														<input class="with-border form-control" name="phone" type="text" id="PhoneRegister" placeholder="Phone Number" required>
+														<i class="icon-feather-phone"></i>
+														<span id="number_error" class="field_error"></span>
+													</div>
+												</div>
+												
+												<button class="margin-top-10 button full-width button-sliding-icon ripple-effect" type="submit" id="register-account-btn">Register <i class="icon-material-outline-arrow-right-alt"></i></button>
+									</div>
+			
+			
+			
+												<div id='register-otp' class="login-setup-section">
+														<div class="otp-header padding-bottom-20">
+															<i class="icon-material-outline-arrow-back" aria-hidden="true"></i>
+															<p>Login Using OTP</p>
+														</div>
+														<div class="form-group second_box d-flex justify-content-center align-items-center margin-bottom-20">
+															<h3><strong><span id="r-message" class="margin-right-10"></span></strong></h3>
+															<button class="button gray ripple-effect-dark b2lr" id="b2r">Change</button>
+														</div>
+			
+														<div class="form-group second_box">
+														<input type="text" id="r-otp" class="form-control" placeholder="OTP" required="required">
+														<span id="otp_error" class="field_error"></span>
+														</div>
+													<div class="form-group second_box">
+														<button type="button" id="e-opt-btn" class="button full-width ripple-effect big margin-top-10 margin-bottom-20">Submit OTP</button>
+													</div>       
+												</div>
+			
+												<!-- Social Login -->
+											<div class="social-login-separator"><span>or</span></div>
+											<div class="social-login-buttons">
+												<button class="facebook-login ripple-effect"><i class="icon-brand-facebook-f"></i> Register via Facebook</button>
+												<button class="google-login ripple-effect"><i class="icon-brand-google-plus-g"></i> Register via Google+</button>
+											</div>
+								</form>
+			
+								<!-- Button -->
+								
+			
+								
+			
+							</div>
+			
 						</div>
-
-						<div class="input-with-icon-left">
-							<i class="icon-material-outline-lock"></i>
-							<input type="password" class="input-text with-border" name="password" id="password" placeholder="Password" required/>
-						</div>
-						<a href="#" class="forgot-password">Forgot Password?</a>
-					</form>
-
-					<!-- Button -->
-					<button class="button full-width button-sliding-icon ripple-effect" type="submit" form="login-form">Log In <i class="icon-material-outline-arrow-right-alt"></i></button>
-
-					<!-- Social Login -->
-					<div class="social-login-separator"><span>or</span></div>
-					<div class="social-login-buttons">
-						<button class="facebook-login ripple-effect"><i class="icon-brand-facebook-f"></i> Log In via Facebook</button>
-						<button class="google-login ripple-effect"><i class="icon-brand-google-plus-g"></i> Log In via Google+</button>
 					</div>
+
 
 				</div>
 
-				<!-- Register -->
-				<div class="popup-tab-content" id="register">
 
-					<!-- Welcome Text -->
-					<div class="welcome-text">
-						<h3>Let's create your account!</h3>
-					</div>
 
-					<!-- Account Type -->
-					<div class="account-type">
-						<div>
-							<input type="radio" name="account-type-radio" id="freelancer-radio" class="account-type-radio" checked/>
-							<label for="freelancer-radio" class="ripple-effect-dark"><i class="icon-material-outline-account-circle"></i> Freelancer</label>
-						</div>
 
-						<div>
-							<input type="radio" name="account-type-radio" id="employer-radio" class="account-type-radio"/>
-							<label for="employer-radio" class="ripple-effect-dark"><i class="icon-material-outline-business-center"></i> Employer</label>
-						</div>
-					</div>
-					
-					<!-- Form -->
-					<form method="post" id="register-account-form">
-						<div class="input-with-icon-left">
-							<i class="icon-material-baseline-mail-outline"></i>
-							<input type="text" class="input-text with-border" name="emailaddress-register" id="emailaddress-register" placeholder="Email Address" required/>
-						</div>
 
-						<div class="input-with-icon-left" title="Should be at least 8 characters long" data-tippy-placement="bottom">
-							<i class="icon-material-outline-lock"></i>
-							<input type="password" class="input-text with-border" name="password-register" id="password-register" placeholder="Password" required/>
-						</div>
 
-						<div class="input-with-icon-left">
-							<i class="icon-material-outline-lock"></i>
-							<input type="password" class="input-text with-border" name="password-repeat-register" id="password-repeat-register" placeholder="Repeat Password" required/>
-						</div>
-					</form>
 
-					<!-- Button -->
-					<button class="margin-top-10 button full-width button-sliding-icon ripple-effect" type="submit" form="register-account-form">Register <i class="icon-material-outline-arrow-right-alt"></i></button>
-
-					<!-- Social Login -->
-					<div class="social-login-separator"><span>or</span></div>
-					<div class="social-login-buttons">
-						<button class="facebook-login ripple-effect"><i class="icon-brand-facebook-f"></i> Register via Facebook</button>
-						<button class="google-login ripple-effect"><i class="icon-brand-google-plus-g"></i> Register via Google+</button>
-					</div>
-
+			<!-- Tab -->
+			<div class="popup-tab-content" id="tab">
+				
+				<!-- Welcome Text -->
+				<div class="welcome-text">
+					<h3>Discuss your project with David</h3>
 				</div>
+					
+				<!-- Form -->
+				<form method="post">
+
+					<div class="input-with-icon-left">
+						<i class="icon-material-outline-account-circle"></i>
+						<input type="text" class="input-text with-border" name="name" id="name" placeholder="First and Last Name"/>
+					</div>
+
+					<div class="input-with-icon-left">
+						<i class="icon-material-baseline-mail-outline"></i>
+						<input type="text" class="input-text with-border" name="emailaddress" id="emailaddress" placeholder="Email Address"/>
+					</div>
+
+					<textarea name="textarea" cols="10" placeholder="Message" class="with-border"></textarea>
+
+					<div class="uploadButton margin-top-25">
+						<input class="uploadButton-input" type="file" accept="image/*, application/pdf" id="upload" multiple/>
+						<label class="uploadButton-button ripple-effect" for="upload">Add Attachments</label>
+						<span class="uploadButton-file-name">Allowed file types: zip, pdf, png, jpg <br> Max. files size: 50 MB.</span>
+					</div>
+
+				</form>
+				
+				<!-- Button -->
+				<button class="button margin-top-35 full-width button-sliding-icon ripple-effect" type="submit">Make an Offer <i class="icon-material-outline-arrow-right-alt"></i></button>
 
 			</div>
+			<!-- Login -->
+			<div class="popup-tab-content" id="loginn">
+				
+				<!-- Welcome Text -->
+				<div class="welcome-text">
+					<h3>Discuss Your Project With Tom</h3>
+				</div>
+					
+				<!-- Form -->
+				<form method="post" id="make-an-offer-form">
+
+						
+
+					<div class="input-with-icon-left">
+						<i class="icon-material-outline-account-circle"></i>
+						<input type="text" class="input-text with-border" name="name2" id="name2" placeholder="First and Last Name" required/>
+					</div>
+
+					<div class="input-with-icon-left">
+						<i class="icon-material-baseline-mail-outline"></i>
+						<input type="text" class="input-text with-border" name="emailaddress2" id="emailaddress2" placeholder="Email Address" required/>
+					</div>
+
+					<textarea name="textarea" cols="10" placeholder="Message" class="with-border"></textarea>
+
+					<div class="uploadButton margin-top-25">
+						<input class="uploadButton-input" type="file" accept="image/*, application/pdf" id="upload-cv" multiple/>
+						<label class="uploadButton-button" for="upload-cv">Add Attachments</label>
+						<span class="uploadButton-file-name">Allowed file types: zip, pdf, png, jpg <br> Max. files size: 50 MB.</span>
+					</div>
+
+				</form>
+				
+				<!-- Button -->
+				<button class="button full-width button-sliding-icon ripple-effect" type="submit" form="make-an-offer-form">Make an Offer <i class="icon-material-outline-arrow-right-alt"></i></button>
+
+			</div>
+
 		</div>
 	</div>
-	<!-- Sign In Popup / End -->
+</div>
+<!-- Make an Offer Popup / End -->	
 
 
 	<!-- Scripts
@@ -1460,6 +1611,44 @@ $('#snackbar-user-status label').click(function() {
 			$('select[name=contact_service] option[value="'+results+'"]').attr('selected', true);
 		});
 	</script> -->
-	
+	<script>
+		// Login and Registration
+          
+		$('#verify-otp').hide();
+				$('#PhoneLogin').on('click',function(){
+				$('#sign-in').hide();
+				$('#verify-otp').show();
+				
+				});
+				$('.fa-chevron-left , #b2l').on('click',function(){
+				$('#sign-in').show();
+				$('#verify-otp').hide();
+				});
+
+				$('#register-otp').hide();
+				$('#register-account-btn').on('click',function(){
+				$('#register-now').hide();
+				$('#register-otp').show();
+				
+				});
+				$('.fa-chevron-left,#b2r').on('click',function(){
+				$('#register-now').show();
+				$('#register-otp').hide();
+				});
+
+				$('#PhoneNumber').on('keydown, keyup', function () {
+					var texInputValue = $('#PhoneNumber').val();					
+					$('#message').html(texInputValue);
+					});
+
+				$('#PhoneRegister').on('keydown, keyup', function () {
+				var texInputValuer = $('#PhoneRegister').val();
+				$('#r-message').html(texInputValuer);
+				});
+
+              
+  
+
+	</script>
 </body>
 </html>

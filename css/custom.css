@@ -2143,3 +2143,31 @@ Policy Page
   border-bottom: 2px solid #2a41e8;
   transition: all 0.3s ease;
 }
+
+/* Dailog Box */
+
+.dialog-with-tabs#custom-dialog{
+  max-width: 80%;
+  padding: 0;
+    color: #666;
+    background: #fff;
+    box-shadow: 0 0 25px rgba(0,0,0,0.25);
+    margin: 0 auto;
+}
+
+.dialog-with-tabs#custom-dialog  button.mfp-close{
+  top: -50px;
+}
+
+
+.dialog-with-tabs#custom-dialog #login-register .popup-tabs-nav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: block;
+  height: 62px;
+  background: #f8f8f8;
+  border-radius: 4px 4px 0 0;
+  border-bottom: 1px solid #e0e0e0;
+}

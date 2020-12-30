@@ -443,7 +443,7 @@ $(document).ready(function(){
                         $this.text('0');
 
                         // Updates the number until we're done
-                        var f = function() {
+                          var f = function() {
                             $this.text($this.data('counterup-nums').shift());
                             if ($this.data('counterup-nums').length) {
                                 setTimeout($this.data('counterup-func'), $settings.delay);
@@ -472,10 +472,10 @@ $(document).ready(function(){
               var toc = $("#toc").tocify({context: "#data-services", selectors: "h3" , showAndHide: true,theme:"none", highlightOnScroll: true,showEffect: "fadeIn", scrollTo: 100, smoothScroll: true,extendPage: false}).data("toc-tocify");
               
           });
-  
-              
-  
 
+
+
+          
       });
 
 // PRELOADER
