@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+<!-- Basic Page Needs
+	================================================== -->
+	<title>Caste Certificate | MakeMyDocument</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Tutorials">  
+    <meta name="description" content="Free Online tutorials">  
+    <meta name="author" content="thisauthor"> 
+<!-- CSS
+	================================================== -->
+	<link rel="stylesheet" href="/css/custom.css">
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/css/bootstrap-datepicker.min.css">
+	<link rel="stylesheet" href="/css/colors/blue.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" type="image/jpg" href="/images/favicon.png"/>
+    <link rel="stylesheet" href="https://makemydocument.in/css/invoice.css">
+
+</head>
+
+<body>
+
+<!-- Invoice -->
+<div id="invoice">
+
+	<!-- Header -->
+	<div class="row">
+		<div class="col-xl-6 col-md-6">
+			<div id="logo"><img src="https://makemydocument.in/images/logo-2.png" alt="" width="100px" ></div>
+		</div>
+
+		<div class="col-xl-6 col-md-6">	
+
+			<p id="details">
+				<strong>Order:</strong> {{ORDER_ID}} <br>
+				<strong>Issued:</strong> {{DATE_ISSUE}}<br>
+			</p>
+		</div>
+	</div>
+
+
+	<!-- Client & Supplier -->
+	<div class="row">
+		<div class="col-xl-12 col-md-12 text-center">
+			<h2>Invoice</h2>
+		</div>
+
+
+		<div class="col-xl-6 col-md-6">	
+			<strong class="margin-bottom-5">Customer</strong>
+			<p>
+            {{CUSTOMER_NAME}}<br>
+            {{CUSTOMER_PHONE}} <br>
+            {{CUSTOMER_EMAIL}} <br>
+			</p>
+		</div>
+
+		<div class="col-xl-6 col-md-6 text-right">	
+			<strong class="margin-bottom-5">Supplier</strong>
+			<p>
+                Blissful Portals Pvt. Ltd. (MakeMyDocument)<br>
+				<a href="mailto:contact@makemydocument.in">contact@makemydocument.in</a><br>
+				9423121988<br>
+			</p>
+		</div>
+	</div>
+
+
+	<!-- Invoice -->
+	<div class="row">
+		<div class="col-xl-12 col-md-12">
+			<table class="margin-top-20">
+				<tr>
+					<th>Description</th>
+					<th>Price</th>
+					<th>TAX</th>
+					<th>Total</th>
+				</tr>
+
+				<tr>
+					<td>{{CUSTOMER_SERVICE}}/-</td> 
+					<td>Rs. {{AMOUNT}}/-</td>
+					<td>Rs. {{GST}}/-</td>
+					<td>Rs. {{TOTAL_AMOUNT}}/-</td>
+				</tr>
+			</table>
+		</div>
+		<div class="col-xl-12 col-md-12">
+		<div class="row justify-content-between">
+		<div class="col-xl-4  col-md-4">	
+			<table id="totals">
+				<tr>
+					<th>Total</th>
+					<th><span>Rs. {{TOTAL_AMOUNT}}/-</span></th>
+				</tr>
+			</table>
+		</div>
+		<div class="col-xl-5  col-md-5  offset-3">	
+			<table id="refernce">
+				<tr>
+					<th>Provider</th>
+					<th><span>{{PAYMENT_PROVIDER}}</span></th>
+				</tr>
+				<tr>
+					<th>Refrence No.</th>
+					<th><span><strong>{{PAYMENT_REFRENCE}}</strong></span></th>
+				</tr>
+			</table>
+		</div>
+		</div>
+		</div>
+    </div>
+    
+
+
+	<!-- Footer -->
+	<div class="row">
+		<div class="col-xl-12 col-md-12 text-center">
+			<ul id="footer" class="invoice-footer text-black">
+				<li><span>{{SITE_URL}}</span></li>
+				<li>{{ADMIN_EMAIL}}</li>
+				<li>{{ADMIN_PHONE}}</li>
+			</ul>
+		</div>
+	</div>
+		
+</div>
+
+</body>
+
+</html>

@@ -2171,3 +2171,39 @@ Policy Page
   border-radius: 4px 4px 0 0;
   border-bottom: 1px solid #e0e0e0;
 }
+
+
+
+/* Form Checkout */
+
+.uploadButton .uploadButton-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  height: 44px;
+  padding: 0px 10px !important;
+  cursor: pointer;
+  border-radius: 4px;
+  color: #66676b;
+  background-color: transparent;
+  border: 1px solid #66676b;
+  flex-direction: row;
+  transition: 0.3s;
+  margin: 0;
+  outline: none;
+  box-shadow: 0 3px 10px rgba(102,103,107,0.1);
+}
+
+#OptionalDetails h4 i{
+  color: #2a41e8;
+  margin-right: 5px;
+}
+
+.button-section{
+  border-top: 1px solid #e0e0e0;
+}
+
+#Detailsform fieldset:not(:first-of-type) {
+  display: none;
+}
