@@ -473,7 +473,39 @@ $(document).ready(function(){
               
           });
 
-
+          $('.blog-carousel-inner').slick({
+            infinite: false,
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            dots: false,
+            arrows: true,
+            responsive: [
+              {
+                breakpoint: 1365,
+                settings: {
+                slidesToShow: 2,
+                dots: false,
+                arrows: false
+                }
+              },
+              {
+                breakpoint: 992,
+                settings: {
+                slidesToShow: 2,
+                dots: false,
+                arrows: false
+                }
+              },
+              {
+                breakpoint: 768,
+                settings: {
+                slidesToShow: 1,
+                dots: false,
+                arrows: false
+                }
+              }
+            ]
+          });
 
           
       });

@@ -1048,9 +1048,10 @@ i.icon-material-outline-arrow-back{
 		bLOG  
 ////////////////////////////
 */
+
 .blog-compact-item img {
   object-fit: cover;
-  height: 45% !important;
+  height: 200px !important;
   width: 100%;
   border-radius: 4px;
 }
@@ -1078,7 +1079,7 @@ button.blog-item-tag a{
   position: relative !important;
   bottom: 0 !important;
   left: 0;
-  padding: 10px 20px !important;
+  padding: 15px 20px !important;
   width: 100%;
   z-index: 50;
   box-sizing: border-box;
@@ -1110,6 +1111,14 @@ button.blog-item-tag a{
   margin: 10px 0 20px 0 !important;
 }
 
+.blog-carousel-inner {
+  width: calc(100% + 30px);
+  left: -15px;
+}
+
+.blog-carousel-inner .blog-compact-item-container{
+margin: 0 10px;
+}
 
 /* ////////////////////////////////////
 		Service Page
