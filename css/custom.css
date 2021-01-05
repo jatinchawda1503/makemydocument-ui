@@ -254,6 +254,9 @@ img.slide__image__top-position {
   }
 }
 
+
+ 
+
 /* ////////////////////////////////////
 	Why people Love US
 ////////////////////////////
@@ -1349,7 +1352,10 @@ select#slct {
 }
 
 
-
+.testimonial-box .star-rating span{
+background-color: transparent;
+box-shadow: none;
+}
 
 
 /* ////////////////////////////////////
@@ -1794,23 +1800,28 @@ Documents Required
   font-weight: 500;
   color: #fff;
   background: #2a41e8;
-  font-size: 20px !important;
+  font-size: 20px;
   border-radius: 5px;
 }
 
 .document-mini-section p{
-  padding: 0px 20px 10px 20px !important;
-  font-size: 16px !important;
+  /* padding: 0px 20px 10px 20px !important; */
+  font-size: 16px ;
+}
+
+.document-mini-section ul{
+  padding: 0;
+  
 }
 
 .document-mini-section i{
-  padding-right: 10px !important;
-  font-size: 18px !important;
+  padding-right: 10px ;
+  font-size: 18px ;
 }
 
 .document-mini-section-sub-header {
-  font-size: 18px !important;
-  font-weight: 400 !important;
+  font-size: 18px ;
+  font-weight: 400 ;
 }
 
 /*///////////////////
