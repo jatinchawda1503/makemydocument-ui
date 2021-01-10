@@ -2227,3 +2227,81 @@ Policy Page
 #Detailsform fieldset:not(:first-of-type) {
   display: none;
 }
+
+/* 
+User-dashboard */
+ul.dashboard-box-list > li{
+  justify-content: space-between;
+}
+
+.dashboard-service-info {
+  list-style: none;
+  padding: 0;
+  margin: 15px 0;
+  background-color: #f4f4f4;
+  text-align: center;
+  border-radius: 4px;
+  padding: 14px 25px;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  align-self: flex-end;
+  position: relative;
+  /*right: 30px;
+  top: 50%; */
+  /* transform: translateY(-50%); */
+  transition: 0.3s;
+  justify-content: center;
+  width: 40%;
+}
+
+.dashboard-service-info li {
+  display: inline-block;
+  border-right: 1px solid #d0d0d0;
+  padding-right: 22px;
+  margin-right: 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.dashboard-service-info li strong {
+  display: block;
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+  line-height: 22px;
+}
+
+
+.dashboard-service-info li span {
+  display: block;
+  font-size: 14px;
+  color: #888;
+  line-height: 20px;
+}
+
+.dashboard-service-info li:last-child {
+  margin-right: 0;
+  padding-right: 0;
+  border: none;
+}
+
+.buttons-status a.view i{
+  display: none !important;
+}
+
+@media screen and (max-width: 768px) {
+
+  .dashboard-service-info {
+       width: 100%;
+ 
+}
+
+
+.dashboard-service-info li {
+ 
+  width: 100%;
+}
+}
