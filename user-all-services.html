@@ -401,8 +401,8 @@
 
 									<!-- Buttons -->
 									<div class="buttons-status">
-										<a href="#" class="button view ripple-effect">View Service <i class="icon-feather-arrow-right"></i></a>
-                                        <a href="#" class="button gray ripple-effect ico" data-tippy-placement="top" data-tippy="" data-original-title="Download Invoice"><i class="icon-material-outline-save-alt"></i></a>
+										<a href="edit-services.html" class="button view ripple-effect">Edit Service <i class="icon-feather-arrow-right"></i></a>
+                                        <a href="invoice.html" class="button gray ripple-effect ico" data-tippy-placement="top" data-tippy="" data-original-title="Download Invoice"><i class="icon-material-outline-save-alt"></i></a>
 									</div>
 								</li>
 
@@ -436,7 +436,8 @@
 
 									<!-- Buttons -->
 									<div class="buttons-status">
-										<a href="#" class="button view ripple-effect">Pay Now <i class="icon-feather-arrow-right"></i></a>
+										<a href="checkout.html" class="button view ripple-effect">Pay Now <i class="icon-feather-arrow-right"></i></a>
+										<a href="edit-services.html" class="button gray ripple-effect ico" title="Edit" data-tippy-placement="top"><i class="icon-feather-edit"></i></a>
 									</div>
                                 </li>
                                 
@@ -471,7 +472,7 @@
 									<!-- Buttons -->
 									<div class="buttons-status">
 										<a href="#" class="button view ripple-effect">View Document<i class="icon-feather-arrow-right"></i></a>
-                                        <a href="#" class="button gray ripple-effect ico" data-tippy-placement="top" data-tippy="" data-original-title="Download Invoice"><i class="icon-material-outline-save-alt"></i></a>
+                                        <a href="invoice.html" class="button gray ripple-effect ico" data-tippy-placement="top" data-tippy="" data-original-title="Download Invoice"><i class="icon-material-outline-save-alt"></i></a>
 									</div>
 								</li>
 
@@ -526,16 +527,13 @@
 <!-- Wrapper / End -->
 
 
-<!-- Apply for a job popup
+<!-- View Service popup
 ================================================== -->
 <div id="small-dialog" class="zoom-anim-dialog mfp-hide dialog-with-tabs">
 
 	<!--Tabs -->
 	<div class="sign-in-form">
 
-		<ul class="popup-tabs-nav">
-			<li><a href="#tab">Add Note</a></li>
-		</ul>
 
 		<div class="popup-tabs-container">
 
@@ -544,31 +542,43 @@
 				
 				<!-- Welcome Text -->
 				<div class="welcome-text">
-					<h3>Do Not Forget 😎</h3>
+					<h3>Current Status</h3>
 				</div>
 					
-				<!-- Form -->
-				<form method="post" id="add-note">
+				<div class="service-overview">
+                
+                    <!-- Conditions 1 -->
+                    <div class="job-listing-description">
+                        <h3 class="job-listing-title"><a href="#">Domicile Certificate</a> <span class="dashboard-status-button yellow">Processing</span></h3>
+                        <h5>Personal Document</h5>
+                    </div>
 
-					<select class="selectpicker with-border default margin-bottom-20" data-size="7" title="Priority">
-						<option>Low Priority</option>
-						<option>Medium Priority</option>
-						<option>High Priority</option>
-					</select>
+                    <!-- Conditions 2 -->
+                    <div class="job-listing-description">
+                        <h3 class="job-listing-title"><a href="#">Domicile Certificate</a> <span class="dashboard-status-button red">Pending Documents for Upload</span></h3>
+                        <h5>Personal Document</h5>
+                    </div>
+                    
+                    <!-- Conditions 3 -->
+                    <div class="job-listing-description">
+                        <h3 class="job-listing-title"><a href="#">Domicile Certificate</a> <span class="dashboard-status-button blue">Verifing Documents</span></h3>
+                        <h5>Personal Document</h5>
+                    </div>
+                   
+                    
+                </div>
+                
+                <div class="buttons-status d-flex justify-content-between align-item-center">
+                    <a href="edit-services.html" class="button view ripple-effect edit-services">Edit Pending Details<i class="icon-feather-arrow-right"></i></a>
 
-					<textarea name="textarea" cols="10" placeholder="Note" class="with-border"></textarea>
-
-				</form>
-				
-				<!-- Button -->
-				<button class="button full-width button-sliding-icon ripple-effect" type="submit" form="add-note">Add Note <i class="icon-material-outline-arrow-right-alt"></i></button>
-
+                    <a href="invoice.html" class="button gray ripple-effect ico" data-tippy-placement="top" data-tippy="Download Invoice" data-original-title="Download Invoice"><i class="icon-material-outline-save-alt"></i></a>
+                </div>
 			</div>
 
 		</div>
 	</div>
 </div>
-<!-- Apply for a job popup / End -->
+<!-- View Service / End -->
 
 
 <!-- Scripts

@@ -2305,3 +2305,38 @@ ul.dashboard-box-list > li{
   width: 100%;
 }
 }
+
+/* dashboard form service */
+
+form.is-readonly .btn-save {
+  display: none;
+}
+form.is-readonly input[disabled], form.is-readonly textarea[disabled] {
+  cursor: text;
+  background-color: #fff;
+  border-color: transparent;
+  outline-color: transparent;
+  box-shadow: none;
+}
+
+form.is-readonly .uploadButton-button{
+  visibility: hidden;
+  display: none;
+}
+form.is-editing .btn-edit {
+  display: none;
+}
+#DashDetailsform .uploadButton{
+  width: auto;
+  margin-right: 5px;
+}
+
+#DashDetailsform h5 i {
+  color: #2a41e8;
+  margin-right: 5px;
+}
+
+#DashDetailsform span.ico {
+ 
+  margin-left: 5px;
+}

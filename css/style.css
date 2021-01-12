@@ -10828,8 +10828,8 @@ img.mfp-img {
 
 /* Submit Button Adjustments */
 .dialog-with-tabs .button {
-	height: 48px;
-	width: 100% !important;
+	/* height: 48px; */
+	/* width: 100% !important; */
 	margin-top: 25px;
 	box-shadow: 0 4px 12px rgba(102,103,107,0.15);
 }
