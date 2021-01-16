@@ -2319,7 +2319,7 @@ form.is-readonly input[disabled], form.is-readonly textarea[disabled] {
   box-shadow: none;
 }
 
-form.is-readonly .uploadButton-button{
+form.is-readonly .uploadButton-button,form.is-readonly .status-update{
   visibility: hidden;
   display: none;
 }

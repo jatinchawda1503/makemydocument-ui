@@ -330,17 +330,17 @@
 	<div class="dashboard-content-container" data-simplebar>
 		<div class="dashboard-content-inner" >
 			
-			<!-- Dashboard Headline -->
-			<div class="dashboard-headline">
-				<h3>Domicile Certificate</h3>
+								<!-- Dashboard Headline -->
+								<div class="dashboard-headline">
+									<h3>Domicile Certificate</h3>
 
-				<!-- Breadcrumbs -->
-				<nav id="breadcrumbs" class="dark">
-					<ul>
-						<li>SID - 123456</li>
-					</ul>
-				</nav>
-			</div>
+									<!-- Breadcrumbs -->
+									<nav id="breadcrumbs" class="dark">
+										<ul>
+											<li>SID - 123456</li>
+										</ul>
+									</nav>
+								</div>
 	
 			<!-- Row -->
 			<div class="row">
@@ -348,258 +348,248 @@
 				<!-- Dashboard Box -->
 				<div class="col-xl-12">
 					<div class="dashboard-box margin-top-0">
-                    
+					
+						<!-- Form Start -->
+						<form id="DashDetailsform" class="is-readonly" method="post">
+									<!-- Headline -->
+									<div class="headline d-flex justify-content-between align-item-center">
+										<h3><i class="icon-material-outline-assignment"></i>View / Edit Services</h3>
+										<div class="sub-btns">
+										<button type="button" class="button gray btn-default btn-edit js-edit">Edit</button>
+										<button type="button" class="button btn-default btn-save js-save">Save</button>
+										</div>
+									</div>
+						
+						
 
-                         <!-- Form Start -->
-                        <form id="DashDetailsform" class="is-readonly" method="post">
-						<!-- Headline -->
-						<div class="headline d-flex justify-content-between align-item-center">
-                            <h3><i class="icon-material-outline-assignment"></i>View / Edit Services</h3>
-                            <div class="sub-btns">
-                            <button type="button" class="button gray btn-default btn-edit js-edit">Edit</button>
-                            <button type="button" class="button btn-default btn-save js-save">Save</button>
-                            </div>
-                        </div>
-                        
-                        
+						
+									<div class="container-fluid">									
+										<div class="container">
+											<div class="row">                                
 
-                        
-						<div class="container-fluid">
-                                   
-                            <div class="container">
-                                
-                                <div class="row">                                
-                           
-                                   
+														<h3 class="margin-bottom-10 margin-top-15">1. Self Declaration</h3>
 
-                                            <h3 class="margin-bottom-10 margin-top-15">1. Self Declaration</h3>
+														<div class="row">
+															<div class="col-lg-12 col-md-12 submit-field">
+																<h5 class="d-inline-block">Name</h5><span class="icon-material-outline-info ico" data-tippy-placement="right" title="edit" data-tippy="DATA" data-original-title="Tooltip"></span>
+																<div class="contact-form-group">
+																	<input class="with-border form-control margin-bottom-16 is-disabled" name="full_name" type="text" id="Fullname" value="Hello World" required disabled> 
+																	
+																	<div class="form-validate-icons">
+																		<span></span>
+																	</div>
+																</div>
+															</div>
 
-
-                                            <div class="row">
-                                                <div class="col-lg-12 col-md-12 submit-field">
-                                                    <h5 class="d-inline-block">Name</h5><span class="icon-material-outline-info ico" data-tippy-placement="right" title="edit" data-tippy="DATA" data-original-title="Tooltip"></span>
-                                                    <div class="contact-form-group">
-                                                        <input class="with-border form-control margin-bottom-16 is-disabled" name="full_name" type="text" id="Fullname" value="Hello World" required disabled> 
-                                                        
-                                                        <div class="form-validate-icons">
-                                                            <span></span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <div class="col-lg-12 col-md-12 submit-field">
-                                                    <h5 class="d-inline-block">Beneficiary Grandfather Name </h5> <span class="icon-material-outline-info ico" data-tippy-placement="right" title="edit" data-tippy="DATA" data-original-title="Tooltip"></span>
-                                                    <div class="contact-form-group">
-                                                        <input class="with-border form-control margin-bottom-16 is-disabled" name="b_full_name" type="text" id="BFullname" value="Hello World Papa" required disabled> 
-                                                       
-                                                        <div class="form-validate-icons">
-                                                            <span></span>
-                                                        </div>
-                                                    </div>
-                                                </div>
+															<div class="col-lg-12 col-md-12 submit-field">
+																<h5 class="d-inline-block">Beneficiary Grandfather Name </h5> <span class="icon-material-outline-info ico" data-tippy-placement="right" title="edit" data-tippy="DATA" data-original-title="Tooltip"></span>
+																<div class="contact-form-group">
+																	<input class="with-border form-control margin-bottom-16 is-disabled" name="b_full_name" type="text" id="BFullname" value="Hello World Papa" required disabled> 
+																	
+																	<div class="form-validate-icons">
+																		<span></span>
+																	</div>
+																</div>
+															</div>
 
 
-                                        
+													
 
-                                                <div class="col-lg-6 col-md-6 submit-field">
-                                                    <div class="contact-form-group">
-                                                        <h5 class="d-inline-block">Date of Birth</h5> <span class="icon-material-outline-info ico" data-tippy-placement="right" title="edit" data-tippy="DATA" data-original-title="Tooltip"></span>
-                                                        <div id="autocomplete-container">
-                                                            <input  class="with-border form-control margin-bottom-16 is-disabled" name="date_birth" id="datepicker" type="text" value="01/19/2021" required disabled>
-                                                        </div>
-                                                        
-                                                        <div class="form-validate-icons">
-                                                            <span></span>
-                                                        </div>
-                                                    </div>
-                                                </div>
+															<div class="col-lg-6 col-md-6 submit-field">
+																<div class="contact-form-group">
+																	<h5 class="d-inline-block">Date of Birth</h5> <span class="icon-material-outline-info ico" data-tippy-placement="right" title="edit" data-tippy="DATA" data-original-title="Tooltip"></span>
+																	<div id="autocomplete-container">
+																		<input  class="with-border form-control margin-bottom-16 is-disabled" name="date_birth" id="datepicker" type="text" value="01/19/2021" required disabled>
+																	</div>
+																	
+																	<div class="form-validate-icons">
+																		<span></span>
+																	</div>
+																</div>
+															</div>
 
-                                                <div class="col-lg-6 col-md-6 submit-field">
-                                                    <h5 class="d-inline-block">Home Town</h5> <span class="icon-material-outline-info ico" data-tippy-placement="right" title="edit" data-tippy="DATA" data-original-title="Tooltip"></span>
-                                                    <div class="contact-form-group">
-                                                        <div id="autocomplete-container">
-                                                            <input  class="with-border form-control margin-bottom-16 is-disabled" name="user_city" id="userCity" type="text" value="Nagpur" required disabled>
-                                                        </div>
-                                                        
-                                                        <div class="form-validate-icons">
-                                                            <span></span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        
-
-                                    
-                                            
-                                            
-                                            
-                                             <h3 class="margin-top-15 margin-bottom-10 gray">2. Required Documents</h3>
-
-                                                
-                        
-                                                <div class="row">
-                                                
-                                                    <div class="col-lg-6 col-md-12 margin-top-5 submit-field">
-                                                            <h5 class="d-inline-block"><i class="icon-feather-folder-plus"></i>Passport Size Photo</h5><span class="icon-material-outline-info ico" data-tippy-placement="right" title="edit" data-tippy="DATA" data-original-title="Tooltip"></span> 
-                                                            
-                                                        <div class="d-flex justify-content-start align-items-center">
-                                                            <div class="uploadButton ">
-                
-                                                                <input class="uploadButton-input is-disabled" type="file" accept="image/*, application/pdf" id="upload">
-                                                                <label class="uploadButton-button ripple-effect" for="upload">Upload Files</label>
-                                                               
-                                                            </div>
-                                                            <div class="view-edit">
-
-                                                                <a href="#" class="button gray ripple-effect ico" title="Edit" data-tippy-placement="top"><i class="icon-feather-eye"></i></a>
-                                                                <a href="#" class="button gray ripple-effect ico" title="Edit" data-tippy-placement="top"><i class="icon-line-awesome-download"></i></a>
-
-                                                            </div>
+															<div class="col-lg-6 col-md-6 submit-field">
+																<h5 class="d-inline-block">Home Town</h5> <span class="icon-material-outline-info ico" data-tippy-placement="right" title="edit" data-tippy="DATA" data-original-title="Tooltip"></span>
+																<div class="contact-form-group">
+																	<div id="autocomplete-container">
+																		<input  class="with-border form-control margin-bottom-16 is-disabled" name="user_city" id="userCity" type="text" value="Nagpur" required disabled>
+																	</div>
+																	
+																	<div class="form-validate-icons">
+																		<span></span>
+																	</div>
+																</div>
+															</div>
 														</div>
-														<span class='uploadButton-file-name'></span>
-                                                    </div>
 
-                                                    <div class="col-lg-6 col-md-12 margin-top-5 submit-field">
-                                                        <h5 class="d-inline-block"><i class="icon-feather-folder-plus"></i>Passport Size Photo of Beneficiary</h5> <span class="icon-material-outline-info ico" data-tippy-placement="right" title="edit" data-tippy="DATA" data-original-title="Tooltip"></span>
-													   
-														<div class="d-flex justify-content-start align-items-center">
-														<div class="uploadButton">
-                                                        
-                                                            <input class="uploadButton-input is-disabled" type="file" accept="image/*, application/pdf" id="upload">
-                                                            <label class="uploadButton-button ripple-effect" for="upload">Upload Files</label>
-                                                            
-                                                        </div>
+														<h3 class="margin-top-15 margin-bottom-10 gray">2. Required Documents</h3>
 
-                                                        <div class="view-edit">
-
-                                                            <a href="#" class="button gray ripple-effect ico" title="Edit" data-tippy-placement="top"><i class="icon-feather-eye"></i></a>
-                                                            <a href="#" class="button gray ripple-effect ico" title="Edit" data-tippy-placement="top"><i class="icon-line-awesome-download"></i></a>
-
-														</div>
-														</div>
-														<span class='uploadButton-file-name'></span>
-                                                    </div>  
-
-                                                    <div class="col-lg-6 col-md-12 margin-top-5 submit-field">
-                                                       
-                                                        <h5 class="d-inline-block"><i class="icon-feather-folder-plus"></i>Live Photo of Applicant</h5> <span class="icon-material-outline-info ico" data-tippy-placement="right" title="edit" data-tippy="DATA" data-original-title="Tooltip"></span>
-														<div class="d-flex justify-content-start align-items-center">
-														<div class="uploadButton">
-                                                        
-                                                            <input class="uploadButton-input is-disabled" type="file" accept="image/*, application/pdf" id="upload">
-                                                            <label class="uploadButton-button ripple-effect" for="upload">Upload Files</label>
-                                                            
-                                                        </div>
-
-                                                        <div class="view-edit">
-
-                                                            <a href="#" class="button gray ripple-effect ico" title="Edit" data-tippy-placement="top"><i class="icon-feather-eye"></i></a>
-                                                            <a href="#" class="button gray ripple-effect ico" title="Edit" data-tippy-placement="top"><i class="icon-line-awesome-download"></i></a>
-
-														</div>
-														</div>
-														<span class='uploadButton-file-name'></span>
-                                                    </div>  
-
-                                                    <div class="col-lg-6 col-md-12 margin-top-5 submit-field">
-                                                        
-                                                        <h5 class="d-inline-block"><i class="icon-feather-folder-plus"></i>Aadhar Card of Applicant</h5> <span class="icon-material-outline-info ico" data-tippy-placement="right" title="edit" data-tippy="DATA" data-original-title="Tooltip"></span>
-														<div class="d-flex justify-content-start align-items-center">
-														<div class="uploadButton">
-                                                        
-                                                            <input class="uploadButton-input is-disabled" type="file" accept="image/*, application/pdf" id="upload">
-                                                            <label class="uploadButton-button ripple-effect" for="upload">Upload Files</label>
-                                                            
-                                                        </div>
-
-                                                        <div class="view-edit">
-
-                                                            <a href="#" class="button gray ripple-effect ico" title="Edit" data-tippy-placement="top"><i class="icon-feather-eye"></i></a>
-                                                            <a href="#" class="button gray ripple-effect ico" title="Edit" data-tippy-placement="top"><i class="icon-line-awesome-download"></i></a>
-
-														</div>
-														</div>
-														<span class='uploadButton-file-name'></span>
-                                                    </div>  
-
-                                                    <div class="col-lg-6 col-md-12 margin-top-5 submit-field">
-                                                
-
-                                                        <h5 class="d-inline-block"><i class="icon-feather-folder-plus"></i>Aadhar Card of Beneficiary</h5> <span class="icon-material-outline-info ico" data-tippy-placement="right" title="edit" data-tippy="DATA" data-original-title="Tooltip"></span>
+														<div class="row">
 														
-														<div class="d-flex justify-content-start align-items-center">
-                                                        <div class="uploadButton">
-                                                        
-                                                            <input class="uploadButton-input is-disabled" type="file" accept="image/*, application/pdf" id="upload">
-                                                            <label class="uploadButton-button ripple-effect" for="upload">Upload Files</label>
-                                                            
-                                                        </div>
+															<div class="col-lg-6 col-md-12 margin-top-5 submit-field">
+																	<h5 class="d-inline-block"><i class="icon-feather-folder-plus"></i>Passport Size Photo</h5><span class="icon-material-outline-info ico" data-tippy-placement="right" title="edit" data-tippy="DATA" data-original-title="Tooltip"></span> 
+																	
+																<div class="d-flex justify-content-start align-items-center">
+																	<div class="uploadButton ">
+						
+																		<input class="uploadButton-input is-disabled" type="file" accept="image/*, application/pdf" id="upload">
+																		<label class="uploadButton-button ripple-effect" for="upload">Upload Files</label>
+																		
+																	</div>
+																	<div class="view-edit">
 
-                                                        <div class="view-edit">
+																		<a href="#" class="button gray ripple-effect ico" title="Edit" data-tippy-placement="top"><i class="icon-feather-eye"></i></a>
+																		<a href="#" class="button gray ripple-effect ico" title="Edit" data-tippy-placement="top"><i class="icon-line-awesome-download"></i></a>
 
-                                                            <a href="#" class="button gray ripple-effect ico" title="Edit" data-tippy-placement="top"><i class="icon-feather-eye"></i></a>
-                                                            <a href="#" class="button gray ripple-effect ico" title="Edit" data-tippy-placement="top"><i class="icon-line-awesome-download"></i></a>
+																	</div>
+																</div>
+																<span class='uploadButton-file-name'></span>
+															</div>
+
+															<div class="col-lg-6 col-md-12 margin-top-5 submit-field">
+																<h5 class="d-inline-block"><i class="icon-feather-folder-plus"></i>Passport Size Photo of Beneficiary</h5> <span class="icon-material-outline-info ico" data-tippy-placement="right" title="edit" data-tippy="DATA" data-original-title="Tooltip"></span>
+																
+																<div class="d-flex justify-content-start align-items-center">
+																<div class="uploadButton">
+																
+																	<input class="uploadButton-input is-disabled" type="file" accept="image/*, application/pdf" id="upload">
+																	<label class="uploadButton-button ripple-effect" for="upload">Upload Files</label>
+																	
+																</div>
+
+																<div class="view-edit">
+
+																	<a href="#" class="button gray ripple-effect ico" title="Edit" data-tippy-placement="top"><i class="icon-feather-eye"></i></a>
+																	<a href="#" class="button gray ripple-effect ico" title="Edit" data-tippy-placement="top"><i class="icon-line-awesome-download"></i></a>
+
+																</div>
+																</div>
+																<span class='uploadButton-file-name'></span>
+															</div>  
+
+															<div class="col-lg-6 col-md-12 margin-top-5 submit-field">
+																
+																<h5 class="d-inline-block"><i class="icon-feather-folder-plus"></i>Live Photo of Applicant</h5> <span class="icon-material-outline-info ico" data-tippy-placement="right" title="edit" data-tippy="DATA" data-original-title="Tooltip"></span>
+																<div class="d-flex justify-content-start align-items-center">
+																<div class="uploadButton">
+																
+																	<input class="uploadButton-input is-disabled" type="file" accept="image/*, application/pdf" id="upload">
+																	<label class="uploadButton-button ripple-effect" for="upload">Upload Files</label>
+																	
+																</div>
+
+																<div class="view-edit">
+
+																	<a href="#" class="button gray ripple-effect ico" title="Edit" data-tippy-placement="top"><i class="icon-feather-eye"></i></a>
+																	<a href="#" class="button gray ripple-effect ico" title="Edit" data-tippy-placement="top"><i class="icon-line-awesome-download"></i></a>
+
+																</div>
+																</div>
+																<span class='uploadButton-file-name'></span>
+															</div>  
+
+															<div class="col-lg-6 col-md-12 margin-top-5 submit-field">
+																
+																<h5 class="d-inline-block"><i class="icon-feather-folder-plus"></i>Aadhar Card of Applicant</h5> <span class="icon-material-outline-info ico" data-tippy-placement="right" title="edit" data-tippy="DATA" data-original-title="Tooltip"></span>
+																<div class="d-flex justify-content-start align-items-center">
+																<div class="uploadButton">
+																
+																	<input class="uploadButton-input is-disabled" type="file" accept="image/*, application/pdf" id="upload">
+																	<label class="uploadButton-button ripple-effect" for="upload">Upload Files</label>
+																	
+																</div>
+
+																<div class="view-edit">
+
+																	<a href="#" class="button gray ripple-effect ico" title="Edit" data-tippy-placement="top"><i class="icon-feather-eye"></i></a>
+																	<a href="#" class="button gray ripple-effect ico" title="Edit" data-tippy-placement="top"><i class="icon-line-awesome-download"></i></a>
+
+																</div>
+																</div>
+																<span class='uploadButton-file-name'></span>
+															</div>  
+
+															<div class="col-lg-6 col-md-12 margin-top-5 submit-field">
+														
+
+																<h5 class="d-inline-block"><i class="icon-feather-folder-plus"></i>Aadhar Card of Beneficiary</h5> <span class="icon-material-outline-info ico" data-tippy-placement="right" title="edit" data-tippy="DATA" data-original-title="Tooltip"></span>
+																
+																<div class="d-flex justify-content-start align-items-center">
+																<div class="uploadButton">
+																
+																	<input class="uploadButton-input is-disabled" type="file" accept="image/*, application/pdf" id="upload">
+																	<label class="uploadButton-button ripple-effect" for="upload">Upload Files</label>
+																	
+																</div>
+
+																<div class="view-edit">
+
+																	<a href="#" class="button gray ripple-effect ico" title="Edit" data-tippy-placement="top"><i class="icon-feather-eye"></i></a>
+																	<a href="#" class="button gray ripple-effect ico" title="Edit" data-tippy-placement="top"><i class="icon-line-awesome-download"></i></a>
+
+																</div>
+																</div>
+																<span class='uploadButton-file-name'></span>
+															</div>  
+
+															<div class="col-lg-6 col-md-12 margin-top-5 submit-field">
+																	<h5 class="d-inline-block"><i class="icon-feather-folder-plus"></i>Aadhar Card of Beneficiary</h5> <span class="icon-material-outline-info ico" data-tippy-placement="right" title="edit" data-tippy="DATA" data-original-title="Tooltip"></span>
+																	<div class="d-flex justify-content-start align-items-center">
+																	<div class="uploadButton">
+																
+																	<input class="uploadButton-input is-disabled" type="file" accept="image/*, application/pdf" id="upload">
+																	<label class="uploadButton-button ripple-effect" for="upload">Upload Files</label>
+																	
+																</div>
+
+																<div class="view-edit">
+
+																	<a href="#" class="button gray ripple-effect ico" title="Edit" data-tippy-placement="top"><i class="icon-feather-eye"></i></a>
+																	<a href="#" class="button gray ripple-effect ico" title="Edit" data-tippy-placement="top"><i class="icon-line-awesome-download"></i></a>
+
+																</div>
+																</div>
+																<span class='uploadButton-file-name'></span>
+															</div>  
+
+															<div class="col-lg-6 col-md-12 margin-top-5 submit-field">
+																
+																<h5 class="d-inline-block"><i class="icon-feather-folder-plus"></i>Leaving Certificate of Beneficiary</h5> <span class="icon-material-outline-info ico" data-tippy-placement="right" title="edit" data-tippy="DATA" data-original-title="Tooltip"></span>
+																
+																<div class="d-flex justify-content-start align-items-center">
+																<div class="uploadButton">
+																
+																	<input class="uploadButton-input is-disabled" type="file" accept="image/*, application/pdf" id="upload">
+																	<label class="uploadButton-button ripple-effect" for="upload">Upload Files</label>
+																	
+																</div>
+
+																<div class="view-edit">
+
+																	<a href="#" class="button gray ripple-effect ico" title="Edit" data-tippy-placement="top"><i class="icon-feather-eye"></i></a>
+																	<a href="#" class="button gray ripple-effect ico" title="Edit" data-tippy-placement="top"><i class="icon-line-awesome-download"></i></a>
+
+																</div>
+																</div>
+																<span class='uploadButton-file-name'></span>
+															</div>  
+															
+														
 
 														</div>
-														</div>
-														<span class='uploadButton-file-name'></span>
-                                                    </div>  
-
-                                                    <div class="col-lg-6 col-md-12 margin-top-5 submit-field">
-                                                         <h5 class="d-inline-block"><i class="icon-feather-folder-plus"></i>Aadhar Card of Beneficiary</h5> <span class="icon-material-outline-info ico" data-tippy-placement="right" title="edit" data-tippy="DATA" data-original-title="Tooltip"></span>
-														 <div class="d-flex justify-content-start align-items-center">
-														 <div class="uploadButton">
-                                                        
-                                                            <input class="uploadButton-input is-disabled" type="file" accept="image/*, application/pdf" id="upload">
-                                                            <label class="uploadButton-button ripple-effect" for="upload">Upload Files</label>
-                                                            
-                                                        </div>
-
-                                                        <div class="view-edit">
-
-                                                            <a href="#" class="button gray ripple-effect ico" title="Edit" data-tippy-placement="top"><i class="icon-feather-eye"></i></a>
-                                                            <a href="#" class="button gray ripple-effect ico" title="Edit" data-tippy-placement="top"><i class="icon-line-awesome-download"></i></a>
-
-														</div>
-														</div>
-														<span class='uploadButton-file-name'></span>
-                                                    </div>  
-
-                                                    <div class="col-lg-6 col-md-12 margin-top-5 submit-field">
-                                                       
-                                                        <h5 class="d-inline-block"><i class="icon-feather-folder-plus"></i>Leaving Certificate of Beneficiary</h5> <span class="icon-material-outline-info ico" data-tippy-placement="right" title="edit" data-tippy="DATA" data-original-title="Tooltip"></span>
-													  
-														<div class="d-flex justify-content-start align-items-center">
-                                                        <div class="uploadButton">
-                                                        
-                                                            <input class="uploadButton-input is-disabled" type="file" accept="image/*, application/pdf" id="upload">
-                                                            <label class="uploadButton-button ripple-effect" for="upload">Upload Files</label>
-                                                            
-                                                        </div>
-
-                                                        <div class="view-edit">
-
-                                                            <a href="#" class="button gray ripple-effect ico" title="Edit" data-tippy-placement="top"><i class="icon-feather-eye"></i></a>
-                                                            <a href="#" class="button gray ripple-effect ico" title="Edit" data-tippy-placement="top"><i class="icon-line-awesome-download"></i></a>
-
-														</div>
-														</div>
-														<span class='uploadButton-file-name'></span>
-                                                    </div>  
-                                                    
-                                                
-
-                                                </div>
-                                        
-                                    </form>
-                            <!-- Form End -->
-                                 </div>
-                                </div>
-						</div>
+												</div>
+											</div>	
+									</div>
+						</form>
+							<!-- Form End -->
+									
 					</div>
 				</div>
 
 			</div>
+
+		</div>
+	</div>
 			<!-- Row / End -->
 
 			<!-- Footer -->
