@@ -130,6 +130,14 @@ table.basic-table th, table.basic-table td {
 #mobile-header{
   display: none;
 }
+
+@media screen and (max-width: 768px){
+.user-menu .header-notifications-dropdown, .header-notifications-dropdown {
+    width: 50%;
+    right: 5px;
+    top: calc(100% + 5px);
+}
+}
 /* ////////////////////////////////////
 		Banner  
 ////////////////////////////
