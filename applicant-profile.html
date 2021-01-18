@@ -290,16 +290,25 @@
 					<div class="dashboard-nav-inner">
 
 						<ul data-submenu-title="Start">
-							<li><a href="user-dashboard.html"><i class="icon-material-outline-dashboard"></i> Dashboard</a></li>
+							<li><a href="admin-dashboard.html"><i class="icon-material-outline-dashboard"></i> Dashboard</a></li>
 						</ul>
 						
-						<ul data-submenu-title="Organize and Manage">
-							<li class="active"><a href="user-all-services.html"></i> Applied Services</a>		
+						<ul data-submenu-title="Services">
+							<li><a href="admin-all-services.html"></i> Edit Services</a>
+									
 							</li>
+                        </ul>
+                        
+                        <ul data-submenu-title="Service Request">
+							<li><a href="admin-view-service.html"></i> View Service Request</a>	
+                            </li>
+
+                            <li class="active"><a href="admin-applicant-list.html"></i> View All Applicant</a>	
+                            </li>
 						</ul>
 
 						<ul data-submenu-title="Account">
-							<li><a href="user-settings.html"><i class="icon-material-outline-settings"></i> Settings</a></li>
+							<li><a href="#"><i class="icon-material-outline-settings"></i> Settings</a></li>
 							<li><a href="login-register.html"><i class="icon-material-outline-power-settings-new"></i> Logout</a></li>
 						</ul>
 						
@@ -331,13 +340,158 @@
 					</ul>
 				</nav>
 			</div>
-	
-			<!-- Row -->
+            
+            <!-- Row -->
 			<div class="row">
 
 				<!-- Dashboard Box -->
 				<div class="col-xl-12">
 					<div class="dashboard-box margin-top-0">
+
+						<!-- Headline -->
+						<div class="headline">
+							<h3><i class="icon-material-outline-account-circle"></i> My Account</h3>
+							<div class="sort-by d-flex">
+                                <span>Account ID:</span>
+                                <h5><strong>12345</strong></h5>
+                            </div>
+
+						</div>
+
+						<div class="content with-padding padding-bottom-0">
+
+							<div class="row">
+
+								<div class="col-xl-3 col-md-12">
+									<div class="avatar-wrapper" data-tippy-placement="bottom" title="Change file">
+										<img class="profile-pic" src="images/user-avatar-placeholder.png" alt="" />
+										<div class="upload-button"></div>
+										<input class="file-upload" type="file" accept="image/*"/>
+									</div>
+									<div class="col-auto">
+										<!-- Account Type -->
+										<div class="submit-field">
+											<h5>Account Type</h5>
+											<div class=" type-account">
+												<div>
+													<label for="freelancer-radio" class="ripple-effect-dark">Customer</label>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-xl-9 col-md-12">
+									<div class="row">
+
+										<div class="col-xl-6">
+											<div class="submit-field">
+												<h5>Full Name</h5>
+												<input type="text" class="with-border" value="Tom Smith">
+											</div>
+										</div>
+
+
+										<div class="col-xl-6">
+											<div class="submit-field">
+												<h5>Email</h5>
+												<input type="text" class="with-border" value="tom@example.com">
+											</div>
+										</div>
+
+										<div class="col-xl-6">
+											<div class="submit-field">
+												<h5>Phone Number</h5>
+												<input type="text" value="987654321" readonly>
+											</div>
+										</div>
+
+										<div class="col-xl-6">
+											<div class="submit-field">
+												<h5>Date Of Birth</h5>
+													<input  class="with-border form-control margin-bottom-16" name="date_birth" id="datepicker" type="text" value="01/13/2021"  required>
+											</div>
+										</div>
+
+										<div class="col-xl-6">
+											<div class="submit-field">
+												<h5>Home Town</h5>
+													<input  class="with-border form-control margin-bottom-16" name="user_city" id="userCity" type="text" value="Nagpur" required>
+											</div>
+										</div>
+
+
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+
+				<!-- Dashboard Box -->
+				<div class="col-xl-12">
+					<div class="dashboard-box">
+
+						<!-- Headline -->
+						<div class="headline">
+							<h3><i class="icon-material-outline-face"></i> My Profile</h3>
+						</div>
+
+						<div class="content">
+							<ul class="fields-ul">
+							<li>
+								<div class="row">
+
+									<div class="col-xl-12">
+										<div class="submit-field">
+											<h5>Attachments</h5>
+											
+											<!-- Attachments -->
+
+
+											<div class="attachments-container margin-top-0 margin-bottom-0">
+												<div class="attachment-box ripple-effect avatar-wrapper" data-tippy-placement="bottom" title="AddharCard">
+													<span>Addhar Card</span>
+													<img class="profile-pic" src="images/user-avatar-placeholder.png" alt="" />
+													<div class="upload-button"></div>
+													<input class="file-upload" type="file" accept="image/*"/>
+													<button class="remove-attachment" data-tippy-placement="top" title="Remove"></button>
+												</div>
+
+
+												<div class="attachment-box ripple-effect avatar-wrapper" data-tippy-placement="bottom" title="Pan Card">
+													<span>Pan Card</span>
+													<img class="profile-pic" src="images/user-avatar-placeholder.png" alt="" />
+													<div class="upload-button"></div>
+													<input class="file-upload" type="file" accept="image/*"/>
+													<button class="remove-attachment" data-tippy-placement="top" title="Remove"></button>
+												</div>
+											</div>
+											<div class="clearfix"></div>
+											
+
+										</div>
+									</div>
+								</div>
+							</li>
+						</ul>
+						</div>
+					</div>
+				</div>
+
+				
+
+			</div>
+			<!-- Row / End -->
+
+
+			<!-- Row -->
+			<div class="row">
+
+				<!-- Dashboard Box -->
+				<div class="col-xl-12">
+					<div class="dashboard-box margin-top-20">
 
                         
 						<!-- Headline -->
@@ -368,19 +522,11 @@
 
 											<!-- Details -->
 											<div class="job-listing-description">
-												<h3 class="job-listing-title"><a href="#">Domicile Certificate</a> <span class="dashboard-status-button green">Active</span></h3>
-                                                <h5>Personal Document</h5>
-                                                <!-- Rating -->
-												<div class="freelancer-rating">
-													<div class="star-rating" data-rating="5.0"></div>
-												</div>
-                                                <!-- Task Details -->
-                                                            
-                                                <ul class="dashboard-service-info text-center">
-                                                    <li><strong>Rs. 699/-</strong><span>Fixed Price</span></li>
-                                                    <li><strong>21-24 days</strong><span>Delivary time</span></li>
-                                                </ul>
-
+												<h3 class="job-listing-title"><a href="#">Domicile Certificate</a> <span class="dashboard-status-button blue">Waiting for Verification</span></h3>
+												<h5><strong>ID</strong>: 1222222 </h5>
+												<h5><strong>Beneficiary</strong>: Jhon Doe </h5>
+												<h5><strong>Date:</strong>1/1/1111</h5>
+												<h5><strong>Payment Status:</strong><span class="dashboard-status-button green">Paid</span></h5>
                                             </div>
                                            
 										</div>
@@ -390,8 +536,9 @@
 
 									<!-- Buttons -->
 									<div class="buttons-status">
-										<a href="edit-services.html" class="button view ripple-effect">Edit Service <i class="icon-feather-arrow-right"></i></a>
-                                        <a href="invoice.html" class="button gray ripple-effect ico" data-tippy-placement="top" data-tippy="" data-original-title="Download Invoice"><i class="icon-material-outline-save-alt"></i></a>
+										<a href="admin-edit-services.html" class="button view ripple-effect">Edit Service <i class="icon-feather-arrow-right"></i></a>
+										<a href="invoice.html" class="button gray ripple-effect ico" data-tippy-placement="top" data-tippy="" data-original-title="Download Invoice"><i class="icon-material-outline-save-alt"></i></a>
+										
 									</div>
 								</li>
 
@@ -404,19 +551,11 @@
 
 											<!-- Details -->
 											<div class="job-listing-description">
-												<h3 class="job-listing-title"><a href="#">Domicile Certificate</a> <span class="dashboard-status-button red">Pending Payment</span></h3>
-                                                <h5>Personal Document</h5>
-                                               <!-- Rating -->
-												<div class="freelancer-rating">
-													<div class="star-rating" data-rating="5.0"></div>
-												</div>
-                                                <!-- Task Details -->
-                                                            
-                                                <ul class="dashboard-service-info text-center">
-                                                    <li><strong>Rs. 699/-</strong><span>Fixed Price</span></li>
-                                                    <li><strong>21-24 days</strong><span>Delivary time</span></li>
-                                                </ul>
-
+												<h3 class="job-listing-title"><a href="#">Domicile Certificate</a> <span class="dashboard-status-button yellow">Processing</span></h3>
+												<h5><strong>ID</strong>: 1222222 </h5>
+												<h5><strong>Beneficiary</strong>: Jhon Doe </h5>
+												<h5><strong>Date:</strong>1/1/1111</h5>
+												<h5><strong>Payment Status:</strong><span class="dashboard-status-button green">Paid</span></h5>
                                             </div>
                                            
 										</div>
@@ -426,10 +565,11 @@
 
 									<!-- Buttons -->
 									<div class="buttons-status">
-										<a href="checkout.html" class="button view ripple-effect">Pay Now <i class="icon-feather-arrow-right"></i></a>
-										<a href="edit-services.html" class="button gray ripple-effect ico" title="Edit" data-tippy-placement="top"><i class="icon-feather-edit"></i></a>
+										<a href="admin-edit-services.html" class="button view ripple-effect">Edit Service <i class="icon-feather-arrow-right"></i></a>
+										<a href="invoice.html" class="button gray ripple-effect ico" data-tippy-placement="top" data-tippy="" data-original-title="Download Invoice"><i class="icon-material-outline-save-alt"></i></a>
+										
 									</div>
-                                </li>
+								</li>
                                 
                                 <li>
 									<!-- Job Listing -->
@@ -440,19 +580,11 @@
 
 											<!-- Details -->
 											<div class="job-listing-description">
-												<h3 class="job-listing-title"><a href="#">Domicile Certificate</a> <span class="dashboard-status-button blue">Completed</span></h3>
-                                                <h5>Personal Document</h5>
-                                                <!-- Rating -->
-												<div class="freelancer-rating">
-													<div class="star-rating" data-rating="5.0"></div>
-												</div>
-                                                <!-- Task Details -->
-                                                            
-                                                <ul class="dashboard-service-info text-center">
-                                                    <li><strong>Rs. 699/-</strong><span>Fixed Price</span></li>
-                                                    <li><strong>21-24 days</strong><span>Delivary time</span></li>
-                                                </ul>
-
+												<h3 class="job-listing-title"><a href="#">Domicile Certificate</a> <span class="dashboard-status-button red">Action required</span></h3>
+												<h5><strong>ID:</strong> 1222222 </h5>
+												<h5><strong>Beneficiary:</strong> Jhon Doe </h5>
+												<h5><strong>Date:</strong>1/1/1111</h5>
+												<h5><strong>Payment Status:</strong><span class="dashboard-status-button red">Pending Payment</span></h5>
                                             </div>
                                            
 										</div>
@@ -462,13 +594,17 @@
 
 									<!-- Buttons -->
 									<div class="buttons-status">
-										<a href="#" class="button view ripple-effect">View Document<i class="icon-feather-arrow-right"></i></a>
-                                        <a href="invoice.html" class="button gray ripple-effect ico" data-tippy-placement="top" data-tippy="" data-original-title="Download Invoice"><i class="icon-material-outline-save-alt"></i></a>
+										<a href="admin-edit-services.html" class="button view ripple-effect">Edit Service <i class="icon-feather-arrow-right"></i></a>
+										<a href="invoice.html" class="button gray ripple-effect ico" data-tippy-placement="top" data-tippy="" data-original-title="Download Invoice"><i class="icon-material-outline-save-alt"></i></a>
+										
 									</div>
 								</li>
 
 							</ul>
+
 						</div>
+
+
 					</div>
 						<!-- Pagination -->
 						<div class="clearfix"></div>
@@ -581,7 +717,7 @@
                 </div>
                 
                 <div class="buttons-status d-flex justify-content-between align-item-center">
-                    <a href="edit-services.html" class="button view ripple-effect edit-services">Edit Pending Details<i class="icon-feather-arrow-right"></i></a>
+                    <a href="admin-edit-services.html" class="button view ripple-effect edit-services">Edit Pending Details<i class="icon-feather-arrow-right"></i></a>
 
                     <a href="invoice.html" class="button gray ripple-effect ico" data-tippy-placement="top" data-tippy="Download Invoice" data-original-title="Download Invoice"><i class="icon-material-outline-save-alt"></i></a>
                 </div>
