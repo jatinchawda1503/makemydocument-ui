@@ -554,356 +554,124 @@
                 <div class="row">
 
                     <div class="col-xl-8 col-md-8 col-sm-12">
-
-                        <div class="accordion js-accordion">
-
-                            <!-- Accordion Item -->
-                            <div class="accordion__item js-accordion-item personal-details active">
-                                <div class="accordion-header js-accordion-header">Details</div> 
-            
-                                <!-- Accordtion Body -->
-                                <div class="accordion-body js-accordion-body" style="display: block;">
-            
-                                    <!-- Accordion Content -->
-                                    <div class="accordion-body__contents">
-                                        
-
-                                    <!-- Form Details Layout Type -->
-
-
-                                    <form id="Detailsform" method="post">
-
-                                        <div id="RequiredDetails">
-                                            <h3 class="margin-bottom-10">Self Declaration</h3>
-                                            <div class="row">
-                                                <div class="col-lg-12 col-md-12">
-                                                    <div class="input-with-icon-left contact-form-group">
-                                                        <input class="with-border form-control margin-bottom-16" name="full_name" type="text" id="Fullname" placeholder="Full Name (*According to AddharCard)" required> 
-                                                        <i class="icon-material-outline-account-circle"></i>
-                                                        <div class="form-validate-icons">
-                                                            <span></span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <div class="col-lg-12 col-md-12">
-                                                    <div class="input-with-icon-left contact-form-group">
-                                                        <input class="with-border form-control margin-bottom-16" name="b_full_name" type="text" id="BFullname" placeholder="Beneficiary Grandfather Name" required> 
-                                                        <i class="icon-material-outline-account-circle"></i>
-                                                        <div class="form-validate-icons">
-                                                            <span></span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-        
-        
-                                                <div class="col-lg-6 col-md-6">
-                                                    <div class="input-with-icon-left contact-form-group">
-                                                        <input class="with-border form-control margin-bottom-16" name="users_phone" type="number" min="1000000000" max="9999999999" id="UserPhone" placeholder="Your Phone Number" required>
-                                                        <i class="icon-feather-phone"></i>
-                                                        <div class="form-validate-icons">
-                                                            <span></span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-        
-        
-                                                <div class="col-lg-6 col-md-6">
-                                                    <div class="input-with-icon-left contact-form-group">
-                                                        <input class="with-border form-control margin-bottom-16" name="users_email" type="email" id="usersEmail" placeholder="Email Address" required>
-                                                        <i class="icon-material-outline-email"></i>
-                                                        <div class="form-validate-icons">
-                                                            <span></span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <div class="col-lg-6 col-md-6">
-                                                    <div class="input-with-icon-left contact-form-group">
-                                                        <div id="autocomplete-container">
-                                                            <input  class="with-border form-control margin-bottom-16" name="date_birth" id="datepicker" type="text" placeholder="Date of Birth (*According to AddharCard)"  required>
-                                                        </div>
-                                                        <i class="icon-material-outline-date-range"></i>
-                                                        <div class="form-validate-icons">
-                                                            <span></span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-        
-                                                <div class="col-lg-6 col-md-6">
-                                                    <div class="input-with-icon-left contact-form-group">
-                                                        <div id="autocomplete-container">
-                                                            <input  class="with-border form-control margin-bottom-16" name="user_city" id="userCity" type="text" placeholder="Home Town" required>
-                                                        </div>
-                                                        <i class="icon-material-outline-location-on"></i>
-                                                        <div class="form-validate-icons">
-                                                            <span></span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-        
-        
-                                                
-        
-        
-                                                <div class="col-lg-12 text-right margin-top-10 button-section">
-                                                    <button type="next"  name="next" id="cont" value="next"  class="button ripple-effect big margin-top-10 margin-bottom-20"> Continue</button>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div id="OptionalDetails">
-                                               
-                                            
-                                            
-                                                <h3 class="d-inline-block">Optional Details</h3>
-                                                <span class="text-muted inline-block margin-left-5">*Can Be filled Later On</span>
-                                                <div class="row">
-                                                
-                                                    <div class="col-lg-12 col-md-12 margin-top-5">
-                                                            <h4><i class="icon-feather-folder-plus"></i>Passport Size Photo</h4>
-                                                            <div class="uploadButton margin-top-10">
-                                                            
-                                                                <input class="uploadButton-input" type="file" accept="image/*, application/pdf" id="upload">
-                                                                <label class="uploadButton-button ripple-effect" for="upload">Upload Files</label>
-                                                                <span class="uploadButton-file-name">Images or documents that might be helpful in describing your job</span>
-                                                            </div>
-                                                    </div>
-
-                                                    <div class="col-lg-12 col-md-12 margin-top-5">
-                                                        <h4><i class="icon-feather-folder-plus"></i>Passport Size Photo of Beneficiary</h4>
-                                                        <div class="uploadButton margin-top-10">
-                                                        
-                                                            <input class="uploadButton-input" type="file" accept="image/*, application/pdf" id="upload">
-                                                            <label class="uploadButton-button ripple-effect" for="upload">Upload Files</label>
-                                                            <span class="uploadButton-file-name">Images or documents that might be helpful in describing your job</span>
-                                                        </div>
-                                                    </div>  
-
-                                                    <div class="col-lg-12 col-md-12 margin-top-5">
-                                                        <h4><i class="icon-feather-folder-plus"></i>Live Photo of Applicant
-                                                        </h4>
-                                                        <div class="uploadButton margin-top-10">
-                                                        
-                                                            <input class="uploadButton-input" type="file" accept="image/*, application/pdf" id="upload">
-                                                            <label class="uploadButton-button ripple-effect" for="upload">Upload Files</label>
-                                                            <span class="uploadButton-file-name">Images or documents that might be helpful in describing your job</span>
-                                                        </div>
-                                                    </div>  
-
-                                                    <div class="col-lg-12 col-md-12 margin-top-5">
-                                                        <h4><i class="icon-feather-folder-plus"></i>Aadhar Card of Applicant</h4>
-                                                        <div class="uploadButton margin-top-10">
-                                                        
-                                                            <input class="uploadButton-input" type="file" accept="image/*, application/pdf" id="upload">
-                                                            <label class="uploadButton-button ripple-effect" for="upload">Upload Files</label>
-                                                            <span class="uploadButton-file-name">Images or documents that might be helpful in describing your job</span>
-                                                        </div>
-                                                    </div>  
-
-                                                    <div class="col-lg-12 col-md-12 margin-top-5">
-                                                        <h4><i class="icon-feather-folder-plus"></i>Aadhar Card of Beneficiary</h4>
-                                                        <div class="uploadButton margin-top-10">
-                                                        
-                                                            <input class="uploadButton-input" type="file" accept="image/*, application/pdf" id="upload">
-                                                            <label class="uploadButton-button ripple-effect" for="upload">Upload Files</label>
-                                                            <span class="uploadButton-file-name">Images or documents that might be helpful in describing your job</span>
-                                                        </div>
-                                                    </div>  
-
-                                                    <div class="col-lg-12 col-md-12 margin-top-5">
-                                                        <h4><i class="icon-feather-folder-plus"></i>Leaving Certificate of Applicant (Father)</h4>
-                                                        <div class="uploadButton margin-top-10">
-                                                        
-                                                            <input class="uploadButton-input" type="file" accept="image/*, application/pdf" id="upload">
-                                                            <label class="uploadButton-button ripple-effect" for="upload">Upload Files</label>
-                                                            <span class="uploadButton-file-name">Images or documents that might be helpful in describing your job</span>
-                                                        </div>
-                                                    </div>  
-
-                                                    <div class="col-lg-12 col-md-12 margin-top-5">
-                                                        <h4><i class="icon-feather-folder-plus"></i>Leaving Certificate of Beneficiary
-                                                        </h4>
-                                                        <div class="uploadButton margin-top-10">
-                                                        
-                                                            <input class="uploadButton-input" type="file" accept="image/*, application/pdf" id="upload">
-                                                            <label class="uploadButton-button ripple-effect" for="upload">Upload Files</label>
-                                                            <span class="uploadButton-file-name">Images or documents that might be helpful in describing your job</span>
-                                                        </div>
-                                                    </div>  
-                                                    
-                                                    <div class="col-lg-12 text-right d-flex justify-content-between align-item-center button-section margin-top-10">
-                                                        <button type="previous" class="previous button gray ripple-effect-dark margin-top-10 margin-bottom-20" id="prev" value="previous">Previous</button>
-                                                        <button type="submit"  name="submit" id="SubmitDetailsLater"  class="button ripple-effect big margin-top-10 margin-bottom-20"> Save Details For Later</button>
-                                                    </div>
-
-                                                </div>
-                                        </div>
-                                    </form>
-
-
-                                    </div>
-            
-                                </div>
-                                <!-- Accordion Body / End -->
-                            </div>
-                                                    <!-- Accordion Item / End -->
-                                    
-                                                    <!-- Accordion Item -->
-                                                    <div class="accordion__item js-accordion-item payment-now">
-                                                        <div class="accordion-header js-accordion-header">Payment</div> 
-                                    
-                                                        <!-- Accordtion Body -->
-                                                        <div class="accordion-body js-accordion-body" style="display: none;">
-                                    
-                                                            <!-- Accordion Content -->
-                                                            <div class="accordion-body__contents">
-                                                                <div class="col-xl-12 col-lg-12 content-right-offset">
-                                    
-
-                                                                <!-- Hedaline -->
-                                                                <h3>Payments</h3>
-                                                    
-                                                                <!-- Billing Cycle Radios  -->
-                                                                <div class="billing-cycle margin-top-25">
-                                                    
-                                                                    <!-- Radio -->
-                                                                    <div class="radio">
-                                                                        <input id="radio-5" name="radio-payment-type" type="radio" checked>
-                                                                        <label for="radio-5">
-                                                                            <span class="radio-label"></span>
-                                                                            Caste Certificate
-                                                                            <span class="billing-cycle-details">
-                                                                                <span class="regular-price-tag">INR 699.00</span>
-                                                                            </span>
-                                                                        </label>
-                                                                    </div>
-                                                                
-                                                                </div>
-
-                                                                <h3 class="margin-top-50">Coupon code</h3>
-                                                                <div class="cupon-code margin-top-25">
-                                                                    <div class="col-lg-6 col-md-6 col-sm-12 padding-left-0">
-                                                                    <div class="keywords-container">
-                                                                        <div class="keyword-input-container">
-                                                                            <input type="text" class="keyword-input with-border" placeholder="Enter Coupon">
-                                                                            <button class="keyword-input-button ripple-effect"><i class="icon-material-outline-add"></i></button>
-                                                                        </div>
-                                                                        <div class="keywords-list" style="height: auto;">
-                                                                               
-                                                                        </div>
-                                                                        <div class="clearfix"></div>
-                                                                    </div>
-                                                                    </div>
-                                                                </div>
-                                                    
-                                                                <!-- Hedline -->
-                                                                <h3 class="margin-top-50">Payment Method</h3>
-                                                    
-                                                                <!-- Payment Methods Accordion -->
-                                                                <div class="payment margin-top-30">
-                                                    
-                                                                    <div class="payment-tab payment-tab-active">
-                                                                        <div class="payment-tab-trigger">
-                                                                            <input checked id="paypal" name="cardType" type="radio" value="paypal">
-                                                                            <label for="paypal">PayPal</label>
-                                                                            <img class="payment-logo paypal" src="https://i.imgur.com/ApBxkXU.png" alt="">
-                                                                        </div>
-                                                    
-                                                                        <div class="payment-tab-content">
-                                                                            <p>You will be redirected to PayPal to complete payment.</p>
-                                                                        </div>
-                                                                    </div>
-                                                    
-                                                    
-                                                                    <div class="payment-tab">
-                                                                        <div class="payment-tab-trigger">
-                                                                            <input type="radio" name="cardType" id="creditCart" value="creditCard">
-                                                                            <label for="creditCart">Credit / Debit Card</label>
-                                                                            <img class="payment-logo" src="https://i.imgur.com/IHEKLgm.png" alt="">
-                                                                        </div>
-                                                    
-                                                                        <div class="payment-tab-content">
-                                                                            <div class="row payment-form-row">
-                                                    
-                                                                                <div class="col-md-6">
-                                                                                    <div class="card-label">
-                                                                                        <input id="nameOnCard" name="nameOnCard" required type="text" placeholder="Cardholder Name">
-                                                                                    </div>
-                                                                                </div>
-                                                    
-                                                                                <div class="col-md-6">
-                                                                                    <div class="card-label">
-                                                                                        <input id="cardNumber" name="cardNumber" placeholder="Credit Card Number" required type="text">
-                                                                                    </div>
-                                                                                </div>
-                                                    
-                                                                                <div class="col-md-4">
-                                                                                    <div class="card-label">
-                                                                                        <input id="expiryDate" placeholder="Expiry Month" required type="text">
-                                                                                    </div>
-                                                                                </div>
-                                                    
-                                                                                <div class="col-md-4">
-                                                                                    <div class="card-label">
-                                                                                        <label for="expiryDate">Expiry Year</label>
-                                                                                        <input id="expirynDate" placeholder="Expiry Year" required type="text">
-                                                                                    </div>
-                                                                                </div>
-                                                    
-                                                                                <div class="col-md-4">
-                                                                                    <div class="card-label">
-                                                                                        <input id="cvv" required type="text" placeholder="CVV">
-                                                                                    </div>
-                                                                                </div>
-                                                    
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                    
-                                                                </div>
-                                                                <!-- Payment Methods Accordion / End -->
-                                                            
-                                                                <a href="order-confirm.html" class="button big ripple-effect margin-top-40 margin-bottom-65">Proceed Payment</a>
-                                                                
-                                                            </div>
-                                                            </div>
-                                                            
-                                                            
-                                                        </div>
-                                                        <!-- Accordion Body / End -->
-                                                    </div>
-                                                    <!-- Accordion Item / End -->
-            
-                           
-                        </div>
-
-                    </div>
-
-                    <!-- Summary -->
-                    <div class="col-xl-4 col-lg-4 margin-top-0 margin-bottom-60">
+                        <section id="contact">
+                            <!-- Row -->
+                          
                         
-                        <!-- Summary -->
-                        <div class="boxed-widget summary margin-top-0">
-                            <div class="boxed-widget-headline">
-                                <h3>Summary</h3>
-                            </div>
-                            <div class="boxed-widget-inner">
-                                <ul>
-                                    <li>Standard Plan <span>$49.00</span></li>
-                                    <li>VAT (20%) <span>$9.80</span></li>
-                                    <li class="total-costs">Final Price <span>$58.80</span></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <!-- Summary / End -->
+                                <!-- Dashboard Box -->
+                                <div class="col-xl-12 padding-mob">
+                                    <div class="dashboard-box margin-top-0 border-highlight-blue">
+                        
+                                        <!-- Headline -->
+                                        <div class="headline header">
+                                            <h3 class="text-center"> Apply for Service</h3>
+                                        </div>
+                        
+                                        <div class="content with-padding padding-bottom-10 padding-top-10">
+                                            <div class="row">
+                        
+                                                <p class="callback-form-content">Fill the details & we will get in touch with you
+                                                </p>
+                                                <div class="contact-form-wrap">
+                        
+                                                    <form id="contactForm" method="post">
+                        
+                                                        <div class="input-with-icon-left contact-form-group">
+                                                            <input class="with-border form-control margin-bottom-16" name="contact_name" type="text" id="contactName" placeholder="Your Name" required> 
+                                                            <i class="icon-material-outline-account-circle"></i>
+                                                            <div class="form-validate-icons">
+                                                                <span></span>
+                                                            </div>
+                                                        </div>
+                        
+                        
+                        
+                                                        <div class="input-with-icon-left contact-form-group">
+                                                            <input class="with-border form-control margin-bottom-16" name="contact_phone" id="contactPhone" type="number" min="1000000000" max="9999999999" placeholder="Phone Number" required>
+                                                            <i class="icon-feather-phone"></i>
+                                                            <div class="form-validate-icons">
+                                                                <span></span>
+                                                            </div>
+                                                        </div>
+                        
+                        
+                        
+                                                        <div class="input-with-icon-left contact-form-group">
+                                                            <input class="with-border form-control margin-bottom-16" name="contact_email" type="email" id="contactEmail" placeholder="Email Address" required>
+                                                            <i class="icon-material-outline-email"></i>
+                                                            <div class="form-validate-icons">
+                                                                <span></span>
+                                                            </div>
+                                                        </div>
+                        
+                        
+                        
+                                                        <div class="input-with-icon-left contact-form-group">
+                                                            <select class="selectpicker with-border service-selector form-control margin-bottom-16" data-size="7" title="Choose Service" name="contact_service"  id="contactService" required>
+                                                                <option value="caste-certificate">Caste Certificate</option>
+                                                                <option value="domicile">Domicile Certificate</option>
+                                                                <option value="income-certificate">Income Certificate</option>
+                                                            </select>
+                                                            <i class="icon-feather-list"></i>
+                                                            <div class="form-validate-icons">
+                                                                <span></span>
+                                                            </div>
+                                                        </div>
+                        
+                        
+                        
+                                                        <div class="input-with-icon-left contact-form-group">
+                                                            <div id="autocomplete-container">
+                                                                <input  class="with-border form-control margin-bottom-16" name="contact_city" id="contactCity" type="text" placeholder="Nagpur" value="Nagpur" readonly>
+                                                            </div>
+                                                            <i class="icon-material-outline-location-on"></i>
+                                                            <div class="form-validate-icons">
+                                                                <span></span>
+                                                            </div>
+                                                        </div>
+                        
+                                                        
+                                                                <!-- <div class="contact-form-group">
+                                                                <div class="row justify-content-start margin-left-5">
+                                                                <div class="captcha-box">
+                                                                <span id="txtCaptchaSpan"></span>
+                                                                    </div>
+                                                                    
+                                                                    <div class="capta-text">
+                                                                    <input type="text" class="with-border form-control padding-right-0 padding-left-10" name="contact_question" id="txtInput" placeholder="Please Enter Code *">
+                                                                    </div>
+                                                                </div>
+                                                                    <input type="hidden" id="txtCaptcha">
+                                                                    <div class="form-validate-icons">
+                                                                        <span></span>
+                                                                    </div>
+                                                                </div> -->
+                                                            
+                        
+                                                        <button type="submit"  name="submit" id="contactBtn"  class="button full-width ripple-effect big margin-top-10 margin-bottom-20"> Submit Details</button>
+                                                        
+                                                        <div class="notification  closeable">
+                                                            <p id="msg"></p>
+                                                            <a class="close"></a>
+                                                        </div>
+                                                    </form>
+                        
+                                                </div>
+                        
+                                            </div>
+                        
+                        
+                                        </div>
+                                    </div>
+                                </div>
+                        
+                           
+                        </section>
+                        
 
-                        <!-- Checkbox -->
-                        <div class="checkbox margin-top-30">
-                            <input type="checkbox" id="two-step">
-                            <label for="two-step"><span class="checkbox-icon"></span>  I agree to the <a href="#">Terms and Conditions</a> and the <a href="#">Automatic Renewal Terms</a></label>
-                        </div>
                     </div>
+
+                    
                 </div>
 
             </div>

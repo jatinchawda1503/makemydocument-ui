@@ -502,7 +502,7 @@
                         <h3><span><i class="icon-line-awesome-rupee"></i></span> 699/-</h3>
                     </div>
 					
-					<div class="star-rating margin-top-20" data-rating="5.0"><span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span></div>
+					<div class="star-rating margin-top-20" data-rating="5.0"></div>
 
 				</div>
 				
@@ -1139,7 +1139,7 @@
 											<li><span><i class="icon-material-outline-location-on"></i></span> Nagpur</span></li>
 										</ul>
 										<div class="total-costs margin-top-15">
-											<a href="/checkout.html" class="button apply-now-button  full-width ripple-effect button-sliding-icon margin-bottom-0" >Apply now<i class="icon-feather-arrow-right"></i></a>
+											<a href="#sign-in-dialog" class="button popup-with-zoom-anim apply-now-button  full-width ripple-effect button-sliding-icon margin-bottom-0" >Apply now<i class="icon-feather-arrow-right"></i></a>
 										</div>
 									</div>
 								</div>
@@ -1318,7 +1318,7 @@
 						</span>
 					</div>
 					<div class="service-button">
-						<a href="/checkout.html" class="button  text-center cta-sticky sticky-home-button">Apply Now</a> 
+						<a href="/checkout.html" class="button text-center cta-sticky sticky-home-button">Apply Now</a> 
 					</div>
 				</div>                
 			</div>           
@@ -1334,7 +1334,177 @@
 <!-- Wrapper / End -->
 
 
+<!-- Sign In Popup
+================================================== -->
+<div id="sign-in-dialog" class="zoom-anim-dialog mfp-hide dialog-with-tabs">
 
+	<!--Tabs -->
+	<div class="sign-in-form">
+
+		<ul class="popup-tabs-nav">
+			<li><a href="#login">Log In</a></li>
+			<li><a href="#register">Register</a></li>
+		</ul>
+
+		<div class="popup-tabs-container">
+
+			<!-- Login -->
+			<div class="popup-tab-content" id="login">
+				
+				<!-- Welcome Text -->
+				<div class="welcome-text">
+					<h3>We're glad to see you again!</h3>
+					<span>Don't have an account? <a href="#" class="register-tab">Sign Up!</a></span>
+				</div>
+					
+				
+					<!-- Form -->
+					<form id="login-form" method="post">
+					
+                        <div id="sign-in">
+							<div class="col-xl-12">
+								<div class="input-with-icon-left contact-form-group">
+									<input class="with-border form-control" name="phone" type="text" id="PhoneNumber" placeholder="Phone Number" required>
+									<i class="icon-feather-phone"></i>
+									<span id="number_error" class="field_error"></span>
+								</div>
+							</div>
+
+						
+
+							<div class="col-xl-12">
+								<button type="button"  name="phone_login" id="PhoneLogin"  class="button full-width ripple-effect big margin-top-10 margin-bottom-20 request-otp" > Submit Details</button>
+                            </div>
+                        </div>
+                        
+                        
+                        <div id='verify-otp' class="login-setup-section" >
+                            <div class="otp-header padding-bottom-20">
+                                <i class="icon-material-outline-arrow-back" aria-hidden="true"></i>
+                                <p>Login Using OTP</p>
+                            </div>
+								<div class="form-group second_box d-flex justify-content-center align-items-center margin-bottom-20">
+									<h3><strong><span id="message" class="margin-right-10"></span></strong></h3>
+									<button class="button gray ripple-effect-dark b2lr" id="b2l">Change</button>
+								</div>
+                                <div class="form-group second_box">
+                                <input type="text" id="otp" class="form-control" placeholder="OTP" required="required">
+                                <span id="otp_error" class="field_error"></span>
+								</div>
+								
+                            <div class="form-group second_box">
+                                <button type="button" id="opt-btn" class="button full-width ripple-effect big margin-top-10 margin-bottom-20" >Submit OTP</button>
+                            </div>       
+                        </div>
+						
+							
+             	   </form>
+
+
+			</div>
+
+			<!-- Register -->
+			<div class="popup-tab-content" id="register">
+				<!-- Form -->
+				<form method="post" id="register-account-form">
+								<div id="register-now">
+											
+														<!-- Welcome Text -->
+											<div class="welcome-text">
+												<h3>Let's create your account!</h3>
+											</div>
+											
+
+											<div class="col-xl-12">
+												<div class="input-with-icon-left contact-form-group">
+													<input class="with-border form-control" name="phone" type="text" id="PhoneRegister" placeholder="Phone Number" required>
+													<i class="icon-feather-phone"></i>
+													<span id="number_error" class="field_error"></span>
+												</div>
+											</div>
+											
+											<button class="margin-top-10 button full-width button-sliding-icon ripple-effect" type="submit" id="register-account-btn">Register <i class="icon-material-outline-arrow-right-alt"></i></button>
+								</div>
+
+
+
+								<div id='register-otp' class="login-setup-section">
+										<div class="otp-header padding-bottom-20">
+											<i class="icon-material-outline-arrow-back" aria-hidden="true"></i>
+											<p>Enter OTP</p>
+										</div>
+										<div class="form-group second_box d-flex justify-content-center align-items-center margin-bottom-20">
+											<h3><strong><span id="r-message" class="margin-right-10"></span></strong></h3>
+											<button class="button gray ripple-effect-dark b2lr" id="b2r">Change</button>
+										</div>
+
+										<div class="form-group second_box">
+										<input type="text" id="r-otp" class="form-control" placeholder="OTP" required="required">
+										<span id="otp_error" class="field_error"></span>
+										</div>
+									<div class="form-group second_box">
+										<button type="button" id="e-opt-btn" class="button full-width ripple-effect big margin-top-10 margin-bottom-20" onClick="location.href='/checkout.html'">Submit OTP</button>
+									</div>       
+								</div>
+
+
+								<div id="genral-details">
+
+									
+											<!-- Welcome Text -->
+										<div class="welcome-text">
+											<h3>Provide Basic Details</h3>
+										</div>
+										
+									<div class="col-xl-12">
+										<div class="input-with-icon-left contact-form-group">
+											<i class="icon-material-outline-account-circle"></i>
+											<input type="text" class="input-text with-border" name="name" id="name-register" placeholder="Full Name" required/>
+										</div>
+									</div>
+
+									<div class="col-xl-12">
+										<div class="input-with-icon-left contact-form-group">
+											<i class="icon-material-baseline-mail-outline"></i>
+											<input type="text" class="input-text with-border" name="emailaddress-register" id="emailaddress-register" placeholder="Email Address" required/>
+										</div>
+									</div>
+
+									<div class="col-xl-12 col-md-12">
+										<div class="input-with-icon-left contact-form-group">
+											<div id="autocomplete-container">
+												<input  class="with-border form-control margin-bottom-16" name="date_birth" id="datepicker" type="text" placeholder="Date of Birth"  required>
+											</div>
+											<i class="icon-material-outline-date-range"></i>
+										</div>
+									</div>
+
+									<div class="col-xl-12 col-md-12">
+										<div class="input-with-icon-left contact-form-group">
+											
+												<input  class="with-border form-control margin-bottom-16" name="user_city" id="userCity" type="text" placeholder="Home Town" required>
+											
+											<i class="icon-material-outline-location-on"></i>
+											
+										</div>
+									</div>
+									
+
+									<div class="form-group second_box">
+										<button type="button" id="gen-ver-btn" class="button full-width ripple-effect big margin-top-10 margin-bottom-20" onClick="location.href='/checkout.html'">Submit</button>
+									</div> 
+
+								</div>
+
+								
+				</form>
+
+			</div>
+
+		</div>
+	</div>
+</div>
+<!-- Sign In Popup / End -->
 
 
 
@@ -1396,5 +1566,69 @@ $('#snackbar-user-status label').click(function() {
 			$('select[name=contact_service] option[value="'+results+'"]').attr('selected', true);
 		});
 	</script> -->
+
+	<script>
+					// Login and Registration
+			  
+					$('#verify-otp').hide();
+					$('#PhoneLogin').on('click',function(){
+					$('#sign-in').hide();
+					$('#verify-otp').show();
+					
+					});
+					$('.fa-chevron-left , #b2l').on('click',function(){
+					$('#sign-in').show();
+					$('#verify-otp').hide();
+					});
+	
+					$('#register-otp').hide();
+					$('#genral-details').hide();
+					$('#register-account-btn').on('click',function(){
+					$('#register-now').hide();
+					$('#register-otp').show();
+					$('#genral-details').hide();
+					
+					});
+	
+	
+					$('.fa-chevron-left,#b2r').on('click',function(){
+					$('#register-now').show();
+					$('#register-otp').hide();
+					$('#genral-details').hide();
+					});
+	
+					$('#e-opt-btn').on('click',function(){
+					$('#register-now').hide();
+					$('#register-otp').hide();
+					$('#genral-details').show();
+					});
+	
+					$('#PhoneNumber').on('keydown, keyup', function () {
+						var texInputValue = $('#PhoneNumber').val();					
+						$('#message').html(texInputValue);
+						});
+	
+					$('#PhoneRegister').on('keydown, keyup', function () {
+					var texInputValuer = $('#PhoneRegister').val();
+					$('#r-message').html(texInputValuer);
+					});
+	</script>
+	
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/css/datepicker.css" rel="stylesheet" type="text/css" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/js/bootstrap-datepicker.js"></script>
+	<script>
+		$('#datepicker').datepicker({
+			uiLibrary: 'bootstrap',
+			orientation: "bottom auto",
+			autoclose: true,
+			todayHighlight: true,
+			beforeShowYear: function(date){
+				if (date.getFullYear() == 2007) {
+					return false;
+				}
+				},
+			toggleActive: true
+		});
+	</script>
 	
 </html>
