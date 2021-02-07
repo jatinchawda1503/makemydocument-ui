@@ -1,0 +1,22 @@
+<table width="100%" border="1" cellspacing="0" cellpadding="5">
+                                                                <tr>
+                                                                <td>Name</td>
+                                                                <td>{{CONTACT_NAME}}</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Phone</td>
+                                                                    <td>{{CONTACT_PHONE}}</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Email</td>
+                                                                    <td>{{CONTACT_EMAIL}}</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Service</td>
+                                                                    <td>{{CONTACT_SERVICE}}</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>City</td>
+                                                                    <td>{{CONTACT_CITY}}</td>
+                                                                </tr>
+                                                               </table>
