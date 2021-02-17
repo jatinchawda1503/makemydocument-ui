@@ -130,14 +130,6 @@ table.basic-table th, table.basic-table td {
 #mobile-header{
   display: none;
 }
-
-@media screen and (max-width: 768px){
-.user-menu .header-notifications-dropdown, .header-notifications-dropdown {
-    width: 50%;
-    right: 5px;
-    top: calc(100% + 5px);
-}
-}
 /* ////////////////////////////////////
 		Banner  
 ////////////////////////////
@@ -386,6 +378,7 @@ margin: 10px 0 auto;
     margin: -10px;
     animation: animate 2s infinite;
     }
+    
     @keyframes animate {
       0%{
           opacity: 0;
@@ -432,6 +425,10 @@ margin: 10px 0 auto;
   padding-left: 15px;
 }
 
+.banner-content .star-rating{
+    margin-top:25px;
+}
+
 @media screen and (min-width: 720px) {
   .service-section-row {
     margin-left: 0px !important;
@@ -463,8 +460,29 @@ margin: 10px 0 auto;
     line-height: 40px;
     font-weight: bold;
     font-size: 28px;
-    margin-top: 40px;
+    margin-top: 0px;
   }
+}
+
+@media screen and (max-width: 480px) {
+    
+    
+    .banner-content h1{
+        font-size:20px !important;
+    }
+    .banner-content h3{
+        margin-top:0px !important;
+        font-size:16px !important;
+    }
+    
+    .banner-content .star-rating{
+        margin-top:10px;
+    }
+    
+    .tocify{
+        display:none !important;
+    }
+    
 }
 
 .banner-content h3{
@@ -1779,7 +1797,7 @@ Banner section
 
 
 .intro-banner-custom {
-   padding: 45px 0; 
+   padding: 15px 0; 
   position: relative;
   background: #2a41e8;
 }
@@ -2234,156 +2252,4 @@ Policy Page
 
 #Detailsform fieldset:not(:first-of-type) {
   display: none;
-}
-
-/* 
-User-dashboard */
-ul.dashboard-box-list > li{
-  justify-content: space-between;
-}
-
-.dashboard-service-info {
-  list-style: none;
-  padding: 0;
-  margin: 15px 0;
-  background-color: #f4f4f4;
-  text-align: center;
-  border-radius: 4px;
-  padding: 14px 25px;
-  display: flex;
-  flex-direction: row;
-  align-items: stretch;
-  align-self: flex-end;
-  position: relative;
-  /*right: 30px;
-  top: 50%; */
-  /* transform: translateY(-50%); */
-  transition: 0.3s;
-  justify-content: center;
-  width: 40%;
-}
-
-.dashboard-service-info li {
-  display: inline-block;
-  border-right: 1px solid #d0d0d0;
-  padding-right: 22px;
-  margin-right: 22px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.dashboard-service-info li strong {
-  display: block;
-  font-size: 16px;
-  font-weight: 600;
-  color: #333;
-  line-height: 22px;
-}
-
-
-.dashboard-service-info li span {
-  display: block;
-  font-size: 14px;
-  color: #888;
-  line-height: 20px;
-}
-
-.dashboard-service-info li:last-child {
-  margin-right: 0;
-  padding-right: 0;
-  border: none;
-}
-
-.buttons-status a.view i{
-  display: none !important;
-}
-
-@media screen and (max-width: 768px) {
-
-  .dashboard-service-info {
-       width: 100%;
- 
-}
-
-
-.dashboard-service-info li {
- 
-  width: 100%;
-}
-}
-
-/* dashboard form service */
-
-form.is-readonly .btn-save {
-  display: none;
-}
-form.is-readonly input[disabled], form.is-readonly textarea[disabled] {
-  cursor: text;
-  background-color: #fff;
-  border-color: transparent;
-  outline-color: transparent;
-  box-shadow: none;
-}
-
-form.is-readonly .uploadButton-button,form.is-readonly .status-update{
-  visibility: hidden;
-  display: none;
-}
-form.is-editing .btn-edit {
-  display: none;
-}
-#DashDetailsform .uploadButton{
-  width: auto;
-  margin-right: 5px;
-}
-
-#DashDetailsform h5 i {
-  color: #2a41e8;
-  margin-right: 5px;
-}
-
-#DashDetailsform span.ico {
- 
-  margin-left: 5px;
-}
-
-
-/* Search Form */
-
-#search {
-  
-  position: relative;
-  display: flex;
-  height: inherit;
-}
-
-#search .searchTerm {
-  
-  border-right: none;
-  padding: 5px 0px 5px 10px;
-  border-radius: 5px 0 0 5px;
-  outline: none;
-  margin: 0;
-  height: 35px;
-}
-
-.searchTerm:focus{
-  color: #2a41e8;
-}
-
-.searchButton {
-  width: 40px;
-  height: 35px;
-  border: 1px solid #2a41e8;
-  background: #2a41e8;
-  text-align: center;
-  color: #fff;
-  border-radius: 0 5px 5px 0;
-  cursor: pointer;
-  font-size: 20px;
-}
-.searchButton  i{
-  vertical-align: middle;
 }
