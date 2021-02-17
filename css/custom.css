@@ -413,6 +413,8 @@ margin: 10px 0 auto;
   }
 }
 
+
+
 .service-section-mini {
   padding-right: 20px;
   padding-left: 20px;
@@ -425,9 +427,7 @@ margin: 10px 0 auto;
   padding-left: 15px;
 }
 
-.banner-content .star-rating{
-    margin-top:25px;
-}
+
 
 @media screen and (min-width: 720px) {
   .service-section-row {
@@ -444,15 +444,22 @@ margin: 10px 0 auto;
   margin: 0 auto;
   padding:0 40px;
 }
+.mtb-bc{
+  margin: 10px 0;
+}
 
 .banner-content h1{
   line-height: 40px;
   font-weight: bold;
-  font-size: 36px;
+  font-size: 26px;
   color: #fff;
   text-align: center;
   text-transform: uppercase;
 
+}
+
+.banner-content .star-rating{
+  
 }
 
 @media screen and (max-width: 600px) {
@@ -464,34 +471,24 @@ margin: 10px 0 auto;
   }
 }
 
-@media screen and (max-width: 480px) {
-    
-    
-    .banner-content h1{
-        font-size:20px !important;
-    }
-    .banner-content h3{
-        margin-top:0px !important;
-        font-size:16px !important;
-    }
-    
-    .banner-content .star-rating{
-        margin-top:10px;
-    }
-    
-    .tocify{
-        display:none !important;
-    }
-    
+#aata-services .process-box.arrow::before{
+  width: 20px;
 }
+
+
 
 .banner-content h3{
-  font-size: 26px;
+  font-size: 20px;
   color: #fff;
   text-align: center;
-  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 15px;
 }
-
+.banner-content h3 span{
+margin-right: 5px;
+}
 .intro-govt-fees {
   font-size: 18px;
   font-weight: 500;
@@ -523,8 +520,9 @@ margin: 10px 0 auto;
   }
 }
 
+
+
 .banner-content i{
-  margin-right: 10px;
   font-size: 20px;
   color: #fff;
 }
@@ -699,6 +697,26 @@ margin: 10px 0 auto;
   .task-listing {
     height: 400px;
   }
+}
+
+@media screen and (max-width: 480px) {
+    
+    
+  .banner-content h1{
+      font-size:20px !important;
+  }
+  .banner-content h3{
+      font-size:16px !important;
+  }
+  
+  .banner-content .star-rating{
+     
+  }
+  
+  .tocify{
+      display:none !important;
+  }
+  
 }
 
 
@@ -2253,4 +2271,3 @@ Policy Page
 #Detailsform fieldset:not(:first-of-type) {
   display: none;
 }
-  
