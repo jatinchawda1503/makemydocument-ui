@@ -1,3 +1,9 @@
+/* temp changes */
+
+.right-side .header-widget{
+  display: none !important;
+}
+
 /*genric*/
 
 .text-white {
@@ -129,6 +135,11 @@ table.basic-table th, table.basic-table td {
 
 #mobile-header{
   display: none;
+}
+
+#homepage #mobile-header .left-side
+{
+  margin-left: 10px;
 }
 /* ////////////////////////////////////
 		Banner  
@@ -436,7 +447,7 @@ margin: 10px 0 auto;
   }
 }
 
-.banner-content{
+.intro-banner-custom .banner-content{
   z-index: 100;
   position: relative;
   width: 100%;
@@ -448,7 +459,7 @@ margin: 10px 0 auto;
   margin: 10px 0;
 }
 
-.banner-content h1{
+.intro-banner-custom .banner-content h1{
   line-height: 40px;
   font-weight: bold;
   font-size: 26px;
@@ -463,7 +474,7 @@ margin: 10px 0 auto;
 }
 
 @media screen and (max-width: 600px) {
-  .banner-content h1{
+  .intro-banner-custom .banner-content h1{
     line-height: 40px;
     font-weight: bold;
     font-size: 28px;
@@ -485,16 +496,13 @@ margin: 10px 0 auto;
 }
 
 
-.banner-content h3{
+.intro-banner-custom .banner-content h3{
   font-size: 20px;
   color: #fff;
   text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   margin-right: 15px;
 }
-.banner-content h3 span{
+.intro-banner-custom .banner-content h3 span{
 margin-right: 5px;
 }
 .intro-govt-fees {
@@ -724,7 +732,45 @@ margin-right: 5px;
   .tocify{
       display:none !important;
   }
-  
+
+  .enquiry-heading h2{
+    font-size: 20px;
+  }
+
+  .section-headline h3{
+    font-size: 20px !important;
+  }
+  .single-page-section .step-img{
+    margin-bottom: 0;
+  }
+
+  .single-page-section .step-img > img{
+    width: 75px;
+
+  }
+
+  .single-page-section .process-box.arrow::before{
+    right: 170px;
+  }
+
+  .single-page-section .process-box h2{
+    font-weight: 600;
+  }
+
+  .single-page-section .process-box p{
+    margin: 5px 0 0 ;
+  }
+
+  .document-mini-section-header{
+    font-size: 16px !important;
+  }
+  .accordion-header{
+   font-size: 14px !important; 
+  }
+
+   .boxed-list{
+    display: none !important;
+  }
 }
 
 
@@ -1423,6 +1469,7 @@ box-shadow: none;
 .bottom-navigation .bottom-navigation-menu .thumbail h3{color:#333 !important; margin: 0 !important; font-size:15px !important;}
 @media (max-width: 480px){ .bottom-navigation{display:block; z-index:1;}#toTop {display:none !important;}}
 .smart-scroll{position: fixed;bottom: 0;right: 0;left: 0;background:rgba(248, 247, 247, 0.99); transform:translateY(0); visibility: visible;    padding: 20px 0 15px 0;border-top: 1px solid #e4e4e4;box-shadow:0 -7px 30px -7px rgba(0,0,0,.6);z-index: 100; opacity: 1;transition:  all 0.8s ease-in-out;}
+.smart-scroll-sticky{position: fixed;bottom: 0;right: 0;left: 0;background:rgba(248, 247, 247, 0.99); transform:translateY(0); visibility: visible;    padding: 20px 0 15px 0;border-top: 1px solid #e4e4e4;box-shadow:0 -7px 30px -7px rgba(0,0,0,.6);z-index: 100; opacity: 1;transition:  all 0.8s ease-in-out;}
 .scrolled-down{transform:translateY(100%); transition: all 0.6s ease-in-out;box-shadow:none;}
 .scrolled-up{transform:translateY(0); transition: all 0.6s ease-in-out;}
 .bottom-navigation .bottom-navigation-menu .thumbail .detail{position:relative;}
@@ -1723,7 +1770,7 @@ Home bottom sticky fotter
   padding-bottom: 5px;
   padding-top: 5px;
   color: #fff !important;
-  font-size: 22px !important;
+  font-size: 20px !important;
   box-shadow: 0 4px 12px rgba(42,65,232,0.15);
   background-color: #2a41e8;
   width:100%;
