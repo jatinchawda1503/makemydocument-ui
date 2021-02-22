@@ -304,10 +304,10 @@ img.slide__image__top-position {
 .step-mark{
   
     background-color:#2a41e8;
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
     line-height: 32px;
-    font-size: 32px;
+    font-size: 18px;
     border-radius: 50%;
     margin: 0 auto;
     position: relative;
@@ -333,7 +333,7 @@ img.slide__image__top-position {
 }
 
 .step-img > img{
-  width: 150px;
+  width: 75px;
 }
 
 .process-box h2, .process-box p{
@@ -343,13 +343,17 @@ margin: 10px 0 auto;
 .process-box.arrow::before{
     content: url("/images/svg/right-arrow.svg"); 
     height: 1px;
-    width: 50px;
+    width: 30px;
     position: absolute;
     right: 0%;
-    top: 120px;
+    top: 45%;
     background:transparent;
     display: block;
     z-index: 9;
+}
+
+.process_section > div:last-child .process-box.arrow::before{ 
+  display:none;
 }
 
 .arrow::before{
@@ -357,6 +361,11 @@ margin: 10px 0 auto;
     display: block;
     margin: -10px;
     animation: animate 2s infinite;
+}
+
+.step-content h2{
+  font-size: 16px;
+  font-weight: 600;
 }
 
 @keyframes animate {
@@ -407,6 +416,36 @@ margin: 10px 0 auto;
           transform: rotate(90deg) translate(10px,10px);
       }
     }
+
+    .process-box.arrow::before{
+      width: 20px;
+    }
+     .step-mark{
+      width: 25px;
+      height: 25px;
+      font-size: 16px;
+    }
+    
+     .process-box h2,  .process-box p{
+      font-size: 16px;
+    }
+
+
+     .process-box.arrow::before{
+      right: 170px;
+    }
+  
+    .process-box h2{
+      font-weight: 600;
+    }
+  
+     .process-box p{
+      margin: 5px 0 0 ;
+    }
+
+    .step-img > img {
+      width: 75px;
+  }
 
 }
 
@@ -495,8 +534,12 @@ margin: 10px 0 auto;
   font-size: 16px;
 }
 
-.single-page-section .process-box h2, .single-page-section .process-box p{
-  font-size: 16px;
+.single-page-section .process-box h2{
+  font-size: 14px;
+}
+
+.single-page-section .process-box p{
+  font-size: 12px;
 }
 
 
@@ -754,7 +797,7 @@ margin-right: 5px;
   }
 
   .single-page-section .process-box.arrow::before{
-    right: 170px;
+    right: 145px;
   }
 
   .single-page-section .process-box h2{
