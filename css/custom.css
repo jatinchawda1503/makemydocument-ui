@@ -1,3 +1,31 @@
+/* .row.align-items-stretch .card:only-of-type { height: 100%; } */
+.row-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+/* vertical spacing between columns */
+
+[class*="col-"] {
+  margin-bottom: 30px;
+}
+
+.card {
+  height: 100%;
+}
+
+
+.services-card-1{
+  border-radius: 5px;
+  box-shadow: 0 2px 12px rgb(0 0 0 / 12%);
+  margin: 0 20px;
+  padding: 35px;
+  /* flex: 1; */
+  position: relative;
+  height: 100%;
+}
+
 /* temp changes */
 
 .right-side .header-widget{

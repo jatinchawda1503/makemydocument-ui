@@ -507,6 +507,18 @@ $(document).ready(function(){
             ]
           });
 
+              //    var maxHeight = -1,
+              //     elems = document.querySelectorAll(".row-flex .col > *");
+              // elems = [].slice.call(elems) // Now a true Array
+
+              // elems.forEach(function(e){
+              //     maxHeight = Math.max(maxHeight, e.offsetHeight);
+              // });
+
+              // elems.forEach(function(e){
+              //     e.style.height = maxHeight + "px";
+              // });
+
           
       });
 
