@@ -4,10 +4,13 @@
   flex-wrap: wrap;
 }
 
+li {
+  list-style-type: none;
+}
 
 /* vertical spacing between columns */
 
-[class*="col-"] {
+.eq-h-cards [class*="col-"] {
   margin-bottom: 30px;
 }
 
